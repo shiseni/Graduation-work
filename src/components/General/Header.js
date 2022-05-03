@@ -41,32 +41,21 @@ const Links = [
   },
   {
     id: 5,
-    name: "Слабовидящим",
-    link: "#",
+    name: "Расписание",
+    link: "/shedule",
   },
   {
     id: 6,
-    name: "Расписание",
-    link: "#",
-  },
-  {
-    id: 7,
     name: "Сведения об образовательной организации",
-    link: "#",
+    link: "/info_about_organization",
     sub: [
-      { id: 1, name: "Основные сведения", link: "#" },
-      { id: 2, name: "Структура и органы управления образовательной организацией", link: "#" },
-      { id: 3, name: "Документы", link: "#" },
-      { id: 4, name: "Образование", link: "#" },
-      { id: 5, name: "Образовательные стандарты", link: "#" },
-      { id: 5, name: "Руководство. Педагогический (научно-педагогический) состав", link: "#" },
-      { id: 6, name: "Материально-техническое обеспечение и оснащенность образовательного процесса", link: "#" },
-      { id: 7, name: "Стипендии и иные виды материальной поддержки", link: "#" },
-      { id: 8, name: "Платные образовательные услуги", link: "#" },
-      { id: 9, name: "Финансово-хозяйственная деятельность", link: "#" },
-      { id: 10, name: "Вакантные места для приема (перевода)", link: "#" },
-      { id: 11, name: "Положения по организации учебного процесса", link: "#" },
-      { id: 12, name: "Инновационная деятельность", link: "#" },
+      { id: 1, name: "Основные сведения", link: "/info_about_organization/basic_info" },
+      { id: 2, name: "Структура и органы управления образовательной организацией", link: "/info_about_organization/structure_management" },
+      { id: 3, name: "Документы", link: "/info_about_organization/documents" },
+      { id: 4, name: "Образование", link: "/info_about_organization/education" },
+      { id: 5, name: "Образовательные стандарты", link: "/info_about_organization/educational_standarts" },
+      { id: 5, name: "Руководство. Педагогический (научно-педагогический) состав", link: "/info_about_organization/leadership_teachers" },
+      { id: 6, name: "Материально-техническое обеспечение и оснащенность образовательного процесса", link: "/info_about_organization/logistics_equipment" },
     ],
   },
 ];
@@ -105,7 +94,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <Link to="#">
+        <Link to="/">
           <img src="/logo.png" width="100" height="41" alt="Главная" />
         </Link>
       </div>

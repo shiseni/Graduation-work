@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 const Abiturientu = (props) => {
   const { setStylePath } = props;
@@ -25,26 +25,7 @@ const Abiturientu = (props) => {
           </p>
           <p>Мы уверены, что КАЧЕСТВЕННОЕ ОБРАЗОВАНИЕ СЕГОДНЯ - ЗАЛОГ ПРОФЕССИОНАЛЬНОГО УСПЕХА ЗАВТРА!</p>
         </div>
-        <div>
-          <Link to="/abiturientu/speciality" title="Наши специальности">
-            Наши специальности
-          </Link>
-        </div>
-        <div>
-          <Link to="/abiturientu/information_about_diploma" title="Информация о выдаваемом дипломе">
-            Информация о выдаваемом дипломе
-          </Link>
-        </div>
-        <div>
-          <Link to="/abiturientu/tuition_price" title="Стоимость обучения">
-            Стоимость обучения
-          </Link>
-        </div>
-        <div>
-          <Link to="/abiturientu/acceptance_check_digits" title="Контрольные цифры приёма">
-            Контрольные цифры приёма
-          </Link>
-        </div>
+        <Outlet />
       </div>
     </div>
   );
