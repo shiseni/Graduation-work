@@ -1,5 +1,307 @@
 import React, { useEffect } from "react";
 
+const employees = [
+  {
+    id: 1,
+    name: "Вершинина Ирина Павловна",
+    image: "Vershinina.jpg",
+    job: "Зам. директора по УМР",
+    placeFirst: "учебный корпус № 1 УлГТУ",
+    placeSecond: "ул. Энгельса, 3, каб. 300а",
+    phone: "(8422) 77-88-59",
+    email: "vershininaip@ido.ulstu.ru",
+  },
+  {
+    id: 2,
+    name: "Рябоволова Татьяна Анатольевна",
+    image: "ryabovolova_ta.jpg",
+    job: "Ведущий специалист",
+    placeFirst: "учебный корпус № 1 УлГТУ",
+    placeSecond: "ул. Энгельса, 3, каб. 300а",
+    phone: "(8422) 77-88-59",
+    email: "ryabovolovata@ido.ulstu.ru",
+  },
+  {
+    id: 3,
+    name: "Блинкова Лариса Борисовна",
+    image: "blinkovalb.jpg",
+    job: "Методист",
+    placeFirst: "учебный корпус № 1 УлГТУ",
+    placeSecond: "ул. Энгельса, 3, каб. 300а",
+    phone: "(8422) 77-88-59",
+    email: "blinkovalb@ido.ulstu.ru",
+  },
+  {
+    id: 4,
+    name: "Кудрявцева Оксана Юрьевна",
+    image: "kudryavtsevaou.jpg",
+    job: "Ведущий специалист",
+    placeFirst: "учебный корпус № 1 УлГТУ",
+    placeSecond: "ул. Энгельса, 3, каб. 138а",
+    phone: "(8422) 77-88-39",
+    email: "ms.ksenia1984@list.ru",
+  },
+  {
+    id: 5,
+    name: "Николенко Александр Сергеевич",
+    image: "nikolenkoas.jpg",
+    job: "Специалист",
+    placeFirst: "учебный корпус № 1 УлГТУ",
+    placeSecond: "ул. Энгельса, 3, каб. 119",
+    phone: "(8422) 77-88-14",
+    email: "nikolenkoas@ido.ulstu.ru",
+  },
+  {
+    id: 6,
+    name: "Зайцева Любовь Ивановна",
+    image: "zaizevali.jpg",
+    job: "Архивариус",
+    placeFirst: "учебный корпус № 1 УлГТУ",
+    placeSecond: "ул. Энгельса, 3, каб. 138б",
+    phone: "(8422) 77-88-42",
+    email: "zaitsevali@ido.ulstu.ru",
+  },
+  {
+    id: 7,
+    name: "Прохорова Валентина Сергеевна",
+    image: "prohorovavs.jpg",
+    job: "Педагог-психолог",
+    placeFirst: "учебный корпус № 1 УлГТУ",
+    placeSecond: "ул. Энгельса, 3, каб. 302",
+    phone: "(8422) 77-88-28",
+    email: "prohorovavs@ido.ulstu.ru",
+  },
+  {
+    id: 8,
+    name: "Аникин Сергей Александрович",
+    image: "Anikin.jpg",
+    job: "Преподаватель Права и Обществознания",
+    placeFirst: "",
+    placeSecond: "",
+    phone: "",
+    email: "",
+  },
+  {
+    id: 9,
+    name: "Аронова Ирина Николаевна",
+    image: "aronova.jpg",
+    job: "Преподаватель Математических дисциплин",
+    placeFirst: "",
+    placeSecond: "",
+    phone: "",
+    email: "",
+  },
+  {
+    id: 10,
+    name: "Баранов Сергей Александрович",
+    image: "Baranov.jpg",
+    job: "Преподаватель Специальных дисциплин",
+    placeFirst: "",
+    placeSecond: "",
+    phone: "",
+    email: "",
+  },
+  {
+    id: 11,
+    name: "Березовская Ольга Владимировна",
+    image: "Berezovskaya.jpg",
+    job: "Преподаватель Высшей математики",
+    placeFirst: "",
+    placeSecond: "",
+    phone: "",
+    email: "",
+  },
+  {
+    id: 12,
+    name: "Графова Елена Васильевна",
+    image: "grafova.jpg",
+    job: "Преподаватель Специальных дисциплин",
+    placeFirst: "",
+    placeSecond: "",
+    phone: "",
+    email: "",
+  },
+  {
+    id: 13,
+    name: "Егорова Анастасия Владимировна",
+    image: "Egorova.jpg",
+    job: "Преподаватель Иностранного языка",
+    placeFirst: "",
+    placeSecond: "",
+    phone: "",
+    email: "",
+  },
+  {
+    id: 14,
+    name: "Иванова Татьяна Александровна",
+    image: "Ivanova.jpg",
+    job: "Преподаватель Экономики",
+    placeFirst: "",
+    placeSecond: "",
+    phone: "",
+    email: "",
+  },
+  {
+    id: 15,
+    name: "Измайлова Ляйсян Вялиевна",
+    image: "izmailovalv.jpg",
+    job: "Преподаватель Русского языка и Литературы",
+    placeFirst: "",
+    placeSecond: "",
+    phone: "",
+    email: "",
+  },
+  {
+    id: 16,
+    name: "Карпекин Сергей Александрович",
+    image: "Karpekin.jpg",
+    job: "Преподаватель Специальных дисциплин",
+    placeFirst: "",
+    placeSecond: "",
+    phone: "",
+    email: "",
+  },
+  {
+    id: 17,
+    name: "Кузьмин Максим Юрьевич",
+    image: "kuzminmu.jpg",
+    job: "Преподаватель Иностранного языка",
+    placeFirst: "",
+    placeSecond: "",
+    phone: "",
+    email: "",
+  },
+  {
+    id: 18,
+    name: "Кунчина Валентина Эдуардовна",
+    image: "kunchina.jpg",
+    job: "Преподаватель Иностранного языка",
+    placeFirst: "",
+    placeSecond: "",
+    phone: "",
+    email: "",
+  },
+  {
+    id: 19,
+    name: "Мартынов Сергей Васильевич",
+    image: "Martynov.jpg",
+    job: "Преподаватель Истории",
+    placeFirst: "",
+    placeSecond: "",
+    phone: "",
+    email: "",
+  },
+  {
+    id: 20,
+    name: "Майорова Татьяна Викторовна",
+    image: "Mayorova.jpg",
+    job: "Преподаватель Математики и информатики",
+    placeFirst: "",
+    placeSecond: "",
+    phone: "",
+    email: "",
+  },
+  {
+    id: 21,
+    name: "Муравьёва Зоя Алексеевна",
+    image: "Muraveva.jpg",
+    job: "Преподаватель Математики",
+    placeFirst: "",
+    placeSecond: "",
+    phone: "",
+    email: "",
+  },
+  {
+    id: 22,
+    name: "Образцова Валентина Владимировна",
+    image: "Obrazcova.jpg",
+    job: "Преподаватель Русского языка и литературы",
+    placeFirst: "",
+    placeSecond: "",
+    phone: "",
+    email: "",
+  },
+  {
+    id: 23,
+    name: "Свешникова Екатерина Сергеевна",
+    image: "Sveshnikova.jpg",
+    job: "Преподаватель",
+    placeFirst: "",
+    placeSecond: "",
+    phone: "",
+    email: "",
+  },
+  {
+    id: 24,
+    name: "Сергеева Элеонора Владимировна",
+    image: "ev_sergeeva.jpg",
+    job: "Преподаватель Русского языка и литературы",
+    placeFirst: "",
+    placeSecond: "",
+    phone: "",
+    email: "",
+  },
+  {
+    id: 25,
+    name: "Филиппова Татьяна Владисовна",
+    image: "Filippova.jpg",
+    job: "Преподаватель Специальных дисциплин",
+    placeFirst: "",
+    placeSecond: "",
+    phone: "",
+    email: "",
+  },
+  {
+    id: 26,
+    name: "Сафонов Александр Валериевич",
+    image: "Filippova.jpg",
+    job: "Преподаватель",
+    placeFirst: "учебный корпус № 1 УлГТУ",
+    placeSecond: "ул. Энгельса, 3, каб. 119",
+    phone: "(8422) 77-88-14",
+    email: "safonovav@ido.ulstu.ru",
+  },
+  {
+    id: 27,
+    name: "Хайбуллова Нурия Абдуласматовна",
+    image: "xaibullova.jpg",
+    job: "Преподаватель Специальных дисциплин",
+    placeFirst: "",
+    placeSecond: "",
+    phone: "",
+    email: "",
+  },
+  {
+    id: 28,
+    name: "Юркина Татьяна Константиновна",
+    image: "urkinatk.jpg",
+    job: "Преподаватель",
+    placeFirst: "учебный корпус № 1 УлГТУ",
+    placeSecond: "ул. Энгельса, 3, каб. 119",
+    phone: "тел. (8422) 77-88-14",
+    email: "polikarpova.1994@mail.ru",
+  },
+];
+
+const Person = (props) => {
+  const { person } = props;
+  return (
+    <div className="employees-content">
+      <h2>{person.name}</h2>
+      <p>
+        <img src={`/images/employees/${person.image}`} border="5" width="180" height="220" alt="" />
+      </p>
+      <span>
+        <font size="+1">{person.job}</font>
+      </span>
+      <p>{person.placeFirst}</p>
+      <p>{person.placeSecond}</p>
+      <p>{person.phone}</p>
+      <p>{person.email}</p>
+    </div>
+  );
+};
+
 const Teachers = (props) => {
   const { setStylePath } = props;
 
@@ -8,483 +310,13 @@ const Teachers = (props) => {
   }, [setStylePath]);
 
   return (
-    <div className="main-container">
-      <div className="container">
-        <div id="content-photo">
-          <h2>Руководство и педагогический состав КЭИ</h2>
-          <div id="footer-structure">
-            <div id="fbox2">
-              <h2>
-                Вершинина<p>Ирина</p>
-                <p> Павловна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure3/Vershinina.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Зам. директора по УМР</font>
-              </span>
-              <p>учебный корпус № 1 УлГТУ</p>
-              <p>ул. Энгельса, 3, каб. 300а</p>
-              <p>тел. (8422) 77-88-59</p>
-              <p>e-mail: vershininaip@ido.ulstu.ru</p>
-            </div>
-
-            <div id="fbox2">
-              <h2>
-                Рябоволова <p> Татьяна</p>
-                <p> Анатольевна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure/ryabovolova_ta.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Ведущий специалист</font>
-              </span>
-              <p>учебный корпус № 1 УлГТУ</p>
-              <p>ул. Энгельса, 3, каб. 300а</p>
-              <p>тел. (8422) 77-88-59</p>
-              <p>e-mail: ryabovolovata@ido.ulstu.ru</p>
-            </div>
-
-            <div id="fbox2">
-              <h2>
-                Блинкова <p> Лариса</p>
-                <p> Борисовна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure/blinkovalb.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Методист</font>
-              </span>
-              <p>учебный корпус № 1 УлГТУ</p>
-              <p>ул. Энгельса, 3, каб. 300а</p>
-              <p>тел. (8422) 77-88-59</p>
-              <p>e-mail: blinkovalb@ido.ulstu.ru</p>
-            </div>
-
-            <div id="fbox2">
-              <h2>
-                Кудрявцева<p> Оксана</p>
-                <p> Юрьевна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure/kudryavtsevaou.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Ведущий специалист</font>
-              </span>
-              <p>учебный корпус № 1 УлГТУ</p>
-              <p>ул. Энгельса, 3, каб. 138а</p>
-              <p>тел. (8422) 77-88-39</p>
-              <p>e-mail: ms.ksenia1984@list.ru</p>
-            </div>
-          </div>
-
-          <div id="footer-structure">
-            <div id="fbox2">
-              <h2>
-                Николенко<p>Александр</p>
-                <p> Сергеевич</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure/nikolenkoas.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Специалист</font>
-              </span>
-              <p>учебный корпус № 1 УлГТУ</p>
-              <p>ул. Энгельса, 3, каб. 119</p>
-              <p>тел. (8422) 77-88-14</p>
-              <p>e-mail: nikolenkoas@ido.ulstu.ru</p>
-            </div>
-
-            <div id="fbox2">
-              <h2>
-                Зайцева<p> Любовь</p>
-                <p> Ивановна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure/zaizevali.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Архивариус</font>
-              </span>
-              <p>учебный корпус № 1 УлГТУ</p>
-              <p>ул. Энгельса, 3, каб. 138б</p>
-              <p>тел. (8422) 77-88-42</p>
-              <p>e-mail: zaitsevali@ido.ulstu.ru</p>
-            </div>
-
-            <div id="fbox2">
-              <h2>
-                Прохорова<p> Валентина</p>
-                <p> Сергеевна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure/prohorovavs.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Педагог-психолог</font>
-              </span>
-              <p>учебный корпус № 1 УлГТУ</p>
-              <p>ул. Энгельса, 3, каб. 302</p>
-              <p>тел. (8422) 77-88-28</p>
-              <p>e-mail: prohorovavs@ido.ulstu.ru</p>
-            </div>
-          </div>
-
-          <div id="footer-structure">
-            <div id="fbox2">
-              <h2>
-                Аникин<p>Сергей</p>
-                <p> Александрович</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure/Anikin.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <p>
-                <span>
-                  <font size="+1">К.Ист.Н.</font>
-                </span>
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-
-              <p>Права и Обществознания</p>
-            </div>
-
-            <div id="fbox2">
-              <h2>
-                Аронова<p>Ирина </p>
-                <p>Николаевна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure/aronova.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-              <p>Математических дисциплин</p>
-            </div>
-
-            <div id="fbox2">
-              <h2>
-                Баранов<p>Сергей</p>
-                <p> Александрович</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure2018/Baranov.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-              <p>Специальных дисциплин</p>
-            </div>
-
-            <div id="fbox2">
-              <h2>
-                Березовская<p>Ольга </p>
-                <p>Владимировна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure2018/Berezovskaya.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-              <p>Высшей математики</p>
-            </div>
-          </div>
-          <div id="footer-structure">
-            <div id="fbox2">
-              <h2>
-                Графова<p>Елена </p>
-                <p>Васильевна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure/grafova.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-              <p>Специальных дисциплин</p>
-            </div>
-
-            <div id="fbox2">
-              <h2>
-                Егорова<p>Анастасия </p>
-                <p>Владимировна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure2018/Egorova.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-              <p>Иностранного языка</p>
-            </div>
-
-            <div id="fbox2">
-              <h2>
-                Иванова<p>Татьяна</p>
-                <p> Александровна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure2018/Ivanova.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-              <p>Экономики</p>
-            </div>
-
-            <div id="fbox2">
-              <h2>
-                Ибрагимов<p>Талгат </p>
-                <p>Баисович</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure3/Ibragimov.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Мастер пр. обучения</font>
-              </span>
-            </div>
-          </div>
-
-          <div id="footer-structure">
-            <div id="fbox2">
-              <h2>
-                Измайлова<p> Ляйсян</p>
-                <p> Вялиевна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure/izmailovalv.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-              <p>Русского языка и Литературы</p>
-            </div>
-
-            <div id="fbox2">
-              <h2>
-                Карпекин<p>Сергей </p>
-                <p>Александрович</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure3/Karpekin.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-              <p>Специальных дисциплин</p>
-              <p>к.т.н., доцент</p>
-              <p>председатель ПЦК нефтегазового дела</p>
-              <p>руководитель ООП</p>
-            </div>
-            <div id="fbox2">
-              <h2>
-                Котельникова<p>Людмила </p>
-                <p>Владимировна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure/kotelnikovalv.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-              <p>Специальных дисциплин</p>
-            </div>
-
-            <div id="fbox2">
-              <h2>
-                Кузьмин<p> Максим </p>
-                <p>Юрьевич</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure/kuzminmu.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-              <p>Иностранного языка</p>
-            </div>
-          </div>
-
-          <div id="footer-structure">
-            <div id="fbox2">
-              <h2>
-                Кунчина<p> Валентина </p>
-                <p>Эдуардовна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure/kunchina.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-              <p>Иностранного языка,</p>
-              <p>председатель П(Ц)К</p>
-              <p>Общественно социальных</p>
-              <p>и гуманитарных дисциплин</p>
-            </div>
-            <div id="fbox2">
-              <h2>
-                Мартынов<p>Сергей</p>
-                <p> Васильевич</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure3/Martynov.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-              <p>Истории</p>
-            </div>
-
-            <div id="fbox2">
-              <h2>
-                Майорова<p>Татьяна </p>
-                <p>Викторовна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure3/Mayorova.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-              <p>Математики</p>
-              <p>и информатики</p>
-            </div>
-
-            <div id="fbox2">
-              <h2>
-                Муравьёва<p>Зоя </p>
-                <p>Алексеевна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure2018/Muraveva.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-              <p>Математики,</p>
-              <p>председатель П(Ц)К</p>
-              <p>Естественно научных</p>
-              <p>и математических дисциплин</p>
-            </div>
-          </div>
-          <div id="footer-structure">
-            <div id="fbox2">
-              <h2>
-                Образцова<p>Валентина </p>
-                <p>Владимировна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure2018/Obrazcova.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-              <p>Русского языка и литературы</p>
-            </div>
-
-            <div id="fbox2">
-              <h2>
-                Свешникова<p>Екатерина </p>
-                <p>Сергеевна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure3/Sveshnikova.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-            </div>
-
-            <div id="fbox2">
-              <h2>
-                Сергеева<p>Элеонора </p>
-                <p>Владимировна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure/ev_sergeeva.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-              <p>Русского языка и литературы</p>
-            </div>
-
-            <div id="fbox2">
-              <h2>
-                Филиппова<p>Татьяна </p>
-                <p>Владисовна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure2018/Filippova.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-              <p>Специальных дисциплин</p>
-            </div>
-          </div>
-
-          <div id="footer-structure">
-            <div id="fbox2">
-              <h2>
-                Сафонов<p> Александр</p>
-                <p> Валериевич</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure/safonovav.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-              <p>учебный корпус № 1 УлГТУ</p>
-              <p>ул. Энгельса, 3, каб. 119</p>
-              <p>тел. (8422) 77-88-14</p>
-              <p>e-mail: safonovav@ido.ulstu.ru</p>
-            </div>
-            <div id="fbox2">
-              <h2>
-                Хайбуллова<p> Нурия </p>
-                <p>Абдуласматовна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure/xaibullova.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-              <p>Специальных дисциплин,</p>
-              <p>председатель П(Ц)К</p>
-              <p>«Экономические и управленческие дисциплины»</p>
-            </div>
-
-            <div id="fbox2">
-              <h2>
-                Юркина<p>Татьяна</p>
-                <p> Константиновна</p>
-              </h2>
-              <p>
-                <img src="assets/images/structure/urkinatk.jpg" border="5" width="180" height="220" alt="" />
-              </p>
-              <span>
-                <font size="+1">Преподаватель</font>
-              </span>
-              <p>учебный корпус № 1 УлГТУ</p>
-              <p>ул. Энгельса, 3, каб. 119</p>
-              <p>тел. (8422) 77-88-14</p>
-              <p>e-mail: polikarpova.1994@mail.ru</p>
-            </div>
-          </div>
+    <div className="container">
+      <div className="section-title">Руководство и педагогический состав КЭИ</div>
+      <div className="section-body">
+        <div className="employees-box">
+          {employees.map((person) => (
+            <Person key={person.id} person={person} />
+          ))}
         </div>
       </div>
     </div>

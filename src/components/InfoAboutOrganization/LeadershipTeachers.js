@@ -9,15 +9,17 @@ const LeadershipTeachers = (props) => {
   }, [setStylePath]);
 
   return (
-    <div className="main-container">
-      <div className="container">
-        <h2>Руководство. Педагогический (научно-педагогический) состав</h2>
-        <Link to="/info_about_organization/leadership_teachers/leadership" title="Руководство и педагогический состав КЭИ">
-          Руководство и педагогический состав КЭИ
-        </Link>
-        <Link to="/info_about_organization/leadership_teachers/teachers" title="Руководство и педагогический состав КЭИ">
-          Руководство и педагогический состав КЭИ
-        </Link>
+    <div className="container">
+      <div className="section-title">Руководство. Педагогический (научно-педагогический) состав</div>
+      <div className="section-body">
+        <div className="new-information">
+          <Link to="/info_about_organization/leadership_teachers/leadership" title="Административный состав факультета СПО">
+            <span className="target-link">Административный состав</span>
+          </Link>
+          <Link to="/info_about_organization/leadership_teachers/teachers" title="Руководство и педагогический состав КЭИ">
+            <span className="target-link">Руководство и педагогический состав</span>
+          </Link>
+        </div>
         <Outlet />
       </div>
     </div>

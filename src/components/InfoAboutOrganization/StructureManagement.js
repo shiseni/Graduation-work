@@ -4,13 +4,13 @@ const StructureManagement = (props) => {
   const { setStylePath } = props;
 
   useEffect(() => {
-    setStylePath("/css/Home.css");
+    setStylePath(null);
   }, [setStylePath]);
 
   return (
-    <div className="main-container">
-      <div className="container">
-        <h2>Структура и органы управления образовательной организацией</h2>
+    <div className="container">
+      <div className="section-title">Структура и органы управления образовательной организацией</div>
+      <div className="section-body">
         <p align="justify">
           <span>
             Колледж экономики и информатики им. А.Н. Афанасьева (КЭИ) был основан в 1999 г. как структурное подразделение Ульяновского государственного технического университета (УлГТУ). Колледж

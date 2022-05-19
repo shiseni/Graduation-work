@@ -10,7 +10,7 @@ const Teacher = (props) => {
   return (
     <div className="main-container">
       <div className="container">
-        <h2>Стоимость обучения</h2>
+        <h2>Преподавателю</h2>
         <div>
           <p>
             <span>

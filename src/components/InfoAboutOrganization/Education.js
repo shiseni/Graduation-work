@@ -8,16 +8,11 @@ const Education = (props) => {
   }, [setStylePath]);
 
   return (
-    <div className="main-container">
-      <div className="container">
-        <h2>Образование</h2>
-        <div height="1"></div>
-        <div height="1">
-          <p>
-            <span>
-              Реализуемые уровни образования - <span>среднее профессиональное образование</span>
-            </span>
-          </p>
+    <div className="container">
+      <div className="section-title">Образование</div>
+      <div className="section-body">
+        <div>
+          <p>Реализуемые уровни образования - среднее профессиональное образование</p>
           <table cellSpacing="5" cellPadding="5" border="5" align="left">
             <tbody>
               <tr>
@@ -276,13 +271,7 @@ const Education = (props) => {
             </tbody>
           </table>
         </div>
-        <div height="1"></div>
-        <div height="1"></div>
-        <div height="1"></div>
-        <div height="1"></div>
-
         <div height="1">
-          <span></span>
           <a href="index.php?id=490">
             <span>Программа государственной итоговой аттестации выпускников</span>
           </a>

@@ -1,61 +1,72 @@
 import React, { useEffect } from "react";
 
+const employees = [
+  {
+    id: 1,
+    name: "Прохорова Светлана Юрьевна",
+    image: "prohorova2.jpg",
+    job: "Декан факультета СПО",
+    placeFirst: "учебный корпус № 1 УлГТУ",
+    placeSecond: "ул. Энгельса, 3, каб. 304",
+    phone: "(8422) 41-80-92",
+    email: "svetl26@mail.ru",
+  },
+  {
+    id: 2,
+    name: "Мартынова Антонина Алексеевна",
+    image: "martynova.jpg",
+    job: "Заместитель декана",
+    placeFirst: "учебный корпус № 1 УлГТУ",
+    placeSecond: "ул. Энгельса, 3, каб. 138а",
+    phone: "(8422) 77-88-39",
+    email: "martynovaaa@ido.ulstu.ru",
+  },
+  {
+    id: 3,
+    name: "Борисова Оксана Витальевна",
+    image: "borisovaov.jpg",
+    job: "Заместитель декана по учебно-воспитательной работе",
+    placeFirst: "учебный корпус № 1 УлГТУ",
+    placeSecond: "ул. Энгельса, 3, каб. 300а",
+    phone: "(8422) 77-88-59",
+    email: "borisovaov@ido.ulstu.ru",
+  },
+];
+
+const Person = (props) => {
+  const { person } = props;
+  return (
+    <div className="employees-content">
+      <h2>{person.name}</h2>
+      <p>
+        <img src={`/images/employees/${person.image}`} border="5" width="180" height="220" alt="" />
+      </p>
+      <span>
+        <font size="+1">{person.job}</font>
+      </span>
+      <p>{person.placeFirst}</p>
+      <p>{person.placeSecond}</p>
+      <p>{person.phone}</p>
+      <p>{person.email}</p>
+    </div>
+  );
+};
+
 const Leadership = (props) => {
   const { setStylePath } = props;
 
   useEffect(() => {
-    setStylePath("/css/Home.css");
+    setStylePath(null);
   }, [setStylePath]);
 
   return (
-    <div className="main-container">
-      <div className="container">
-        <h2>Административный состав факультета СПО</h2>
-        <div id="footer-structure">
-          <div id="fbox2">
-            <h2>Прохорова Светлана Юрьевна</h2>
-            <p>
-              <img src="assets/images/structure2018/prohorova2.jpg" border="5" width="180" height="220" alt="" />
-            </p>
-            <span>
-              <font size="+1">Декан факультета СПО</font>
-            </span>
-            <p>
-              <span>
-                <font size="+1">К.П.Н., Доцент</font>
-              </span>
-            </p>
-            <p>учебный корпус № 1 УлГТУ</p>
-            <p>ул. Энгельса, 3, каб. 304</p>
-            <p>тел. (8422) 41-80-92</p>
-            <p>svetl26@mail.ru</p>
-          </div>
-          <div id="fbox2">
-            <h2>Мартынова Антонина Алексеевна</h2>
-            <p>
-              <img src="assets/images/structure/martynova.jpg" border="5" width="180" height="220" alt="" />
-            </p>
-            <span>
-              <font size="+1">Заместитель декана</font>
-            </span>
-            <p>учебный корпус № 1 УлГТУ</p>
-            <p>ул. Энгельса, 3, каб. 138а</p>
-            <p>тел. (8422) 77-88-39</p>
-            <p>e-mail: martynovaaa@ido.ulstu.ru</p>
-          </div>
-          <div id="fbox2">
-            <h2>Борисова Оксана Витальевна</h2>
-            <p>
-              <img src="assets/images/structure/borisovaov.jpg" border="5" width="180" height="220" alt="" />
-            </p>
-            <span>
-              <font size="+1">Заместитель декана по учебно-воспитательной работе</font>
-            </span>
-            <p>учебный корпус № 1 УлГТУ</p>
-            <p>ул. Энгельса, 3, каб. 300а</p>
-            <p>тел. (8422) 77-88-59</p>
-            <p>e-mail: borisovaov@ido.ulstu.ru</p>
-          </div>
+    <div className="container">
+      <div className="section-title">Административный состав факультета СПО</div>
+      <div className="section-body">
+        <div className="employees-box">
+          {employees.map((person) => (
+            <Person key={person.id} person={person} />
+          ))}
         </div>
       </div>
     </div>

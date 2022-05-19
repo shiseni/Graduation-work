@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Outlet } from "react-router-dom";
 
 const InfoAboutOrganization = (props) => {
   const { setStylePath } = props;
@@ -7,7 +8,11 @@ const InfoAboutOrganization = (props) => {
     setStylePath("/css/Home.css");
   }, [setStylePath]);
 
-  return <div className="main-container"></div>;
+  return (
+    <div className="main-container">
+      <Outlet />
+    </div>
+  );
 };
 
 export default InfoAboutOrganization;

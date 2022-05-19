@@ -53,7 +53,6 @@ function App() {
             <Route path="information_about_diploma" element={<InformationAboutDiploma setStylePath={setStylePath} />} />
             <Route path="tuition_price" element={<TuitionPrice setStylePath={setStylePath} />} />
           </Route>
-
           <Route path="/student" element={<Student setStylePath={setStylePath} />}>
             <Route path="title_pages_for_final_qualifying_work" element={<TitlePagesForFinalQualifyingWork setStylePath={setStylePath} />} />
             <Route path="portfolio" element={<Portfolio setStylePath={setStylePath} />} />
@@ -61,23 +60,21 @@ function App() {
             <Route path="methodical_materials" element={<MethodicalMaterials setStylePath={setStylePath} />} />
             <Route path="demo_exam" element={<DemoExam setStylePath={setStylePath} />} />
           </Route>
-
           <Route path="/employees" element={<Employees setStylePath={setStylePath} />} />
           <Route path="/employees/teacher" element={<Teacher setStylePath={setStylePath} />} />
-
           <Route path="/shedule" element={<Shedule setStylePath={setStylePath} />} />
-
-          <Route path="/info_about_organization" element={<InfoAboutOrganization setStylePath={setStylePath} />} />
-          <Route path="/info_about_organization/basic_info" element={<BasicInfo setStylePath={setStylePath} />} />
-          <Route path="/info_about_organization/structure_management" element={<StructureManagement setStylePath={setStylePath} />} />
-          <Route path="/info_about_organization/documents" element={<Documents setStylePath={setStylePath} />} />
-          <Route path="/info_about_organization/education" element={<Education setStylePath={setStylePath} />} />
-          <Route path="/info_about_organization/educational_standarts" element={<EducationalStandards setStylePath={setStylePath} />} />
-          <Route path="/info_about_organization/leadership_teachers" element={<LeadershipTeachers setStylePath={setStylePath} />}>
-            <Route path="leadership" element={<Leadership setStylePath={setStylePath} />} />
-            <Route path="teachers" element={<Teachers setStylePath={setStylePath} />} />
+          <Route path="/info_about_organization" element={<InfoAboutOrganization setStylePath={setStylePath} />}>
+            <Route path="basic_info" element={<BasicInfo setStylePath={setStylePath} />} />
+            <Route path="structure_management" element={<StructureManagement setStylePath={setStylePath} />} />
+            <Route path="documents" element={<Documents setStylePath={setStylePath} />} />
+            <Route path="education" element={<Education setStylePath={setStylePath} />} />
+            <Route path="educational_standarts" element={<EducationalStandards setStylePath={setStylePath} />} />
+            <Route path="leadership_teachers" element={<LeadershipTeachers setStylePath={setStylePath} />}>
+              <Route path="leadership" element={<Leadership setStylePath={setStylePath} />} />
+              <Route path="teachers" element={<Teachers setStylePath={setStylePath} />} />
+            </Route>
+            <Route path="logistics_equipment" element={<LogisticsEquipment setStylePath={setStylePath} />} />
           </Route>
-          <Route path="/info_about_organization/logistics_equipment" element={<LogisticsEquipment setStylePath={setStylePath} />} />
         </Routes>
       </BrowserRouter>
       <Footer />
