@@ -14,12 +14,12 @@ const Contact = () => {
           <span>Обед</span>
         </div>
         <div className="table-body">
-          <span>8:30-17:22</span>
-          <span>8:30-17:22</span>
-          <span>8:30-17:22</span>
-          <span>8:30-17:22</span>
-          <span>8:30-16:22</span>
-          <span>13:00-13:40</span>
+          <span>08:30 – 17:22</span>
+          <span>08:30 – 17:22</span>
+          <span>08:30 – 17:22</span>
+          <span>08:30 – 17:22</span>
+          <span>08:30 – 16:22</span>
+          <span>13:00 - 13:40</span>
         </div>
       </div>
       <div className="table">

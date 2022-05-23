@@ -22,6 +22,11 @@ import DemoExam from "./components/Student/DemoExam";
 
 import Employees from "./components/Employees";
 import Teacher from "./components/Employees/Teacher";
+import GraduationProjectSchedule from "./components/Employees/GraduationProjectSchedule";
+
+import Security from "./components/Security";
+import TerroristThreat from "./components/Security/TerroristThreat";
+import StopCorruption from "./components/Security/StopCorruption";
 
 import Shedule from "./components/Schedule";
 
@@ -60,6 +65,11 @@ function App() {
           </Route>
           <Route path="/employees" element={<Employees setStylePath={setStylePath} />}>
             <Route path="teacher" element={<Teacher setStylePath={setStylePath} />} />
+            <Route path="graduation_project_schedule" element={<GraduationProjectSchedule setStylePath={setStylePath} />} />
+          </Route>
+          <Route path="/security" element={<Security setStylePath={setStylePath} />}>
+            <Route path="terrorist_threat" element={<TerroristThreat setStylePath={setStylePath} />} />
+            <Route path="stop_corruption" element={<StopCorruption setStylePath={setStylePath} />} />
           </Route>
           <Route path="/shedule" element={<Shedule setStylePath={setStylePath} />} />
           <Route path="/info_about_organization" element={<InfoAboutOrganization setStylePath={setStylePath} />}>

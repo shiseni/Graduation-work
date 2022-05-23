@@ -32,15 +32,18 @@ export const Links = [
     key: "employees",
     sub: [
       { id: 1, name: "Преподавателю", link: "/employees/teacher", key: "employees", type: "teacher" },
-      { id: 2, name: "Общая информация", link: "#", key: "employees", type: "#" },
-      { id: 3, name: "График проведения защиты дипломных проектов (работ)", link: "#", key: "employees", type: "#" },
+      { id: 2, name: "График проведения защиты дипломных проектов", link: "/employees/graduation_project_schedule", key: "employees", type: "graduation_project_schedule" },
     ],
   },
   {
     id: 4,
     name: "Ваша безопасность",
-    link: "#",
-    key: "#",
+    link: "/security",
+    key: "security",
+    sub: [
+      { id: 1, name: "Порядок действия в случае возникновения террористической угрозы", link: "/security/terrorist_threat", key: "security", type: "terrorist_threat" },
+      { id: 2, name: "STOP Коррупция", link: "/security/stop_corruption", key: "security", type: "stop_corruption" },
+    ],
   },
   {
     id: 5,
