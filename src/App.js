@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./css/Base.css";
-import "./css/Footer.css";
-import "./css/Header.css";
 import "./css/Normalize.css";
 import Header from "./components/General/Header";
 import Footer from "./components/General/Footer";

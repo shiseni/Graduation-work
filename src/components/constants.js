@@ -88,19 +88,18 @@ export const MainNavButton = styled.li`
   cursor: default;
   text-align: center;
   position: relative;
-  flex-grow: 1;
   height: 100%;
   background: ${(props) => (props.type === null ? "#006090" : `${COLORS[props.type + "_cloudy"]}`)};
   color: ${(props) => (props.type ? "#d9d9d9" : "#1c1c1c")};
 
   > a {
     display: block;
-    padding: 20px 0px;
+    padding: 10px 20px;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
     font-family: PT Serif, sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     color: #ffffff;
   }
 `;

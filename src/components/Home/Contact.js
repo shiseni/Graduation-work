@@ -4,6 +4,25 @@ const Contact = () => {
   return (
     <div>
       <div className="table">
+        <span className="table-title">Режим работы</span>
+        <div className="table-body">
+          <span>Понедельник</span>
+          <span>Вторник</span>
+          <span>Среда</span>
+          <span>Четверг</span>
+          <span>Пятница</span>
+          <span>Обед</span>
+        </div>
+        <div className="table-body">
+          <span>8:30-17:22</span>
+          <span>8:30-17:22</span>
+          <span>8:30-17:22</span>
+          <span>8:30-17:22</span>
+          <span>8:30-16:22</span>
+          <span>13:00-13:40</span>
+        </div>
+      </div>
+      <div className="table">
         <span className="table-title">Номера телефонов</span>
         <div className="table-body">
           <span>Приёмная</span>
@@ -31,25 +50,6 @@ const Contact = () => {
         </div>
       </div>
       <div className="table">
-        <span className="table-title">Режим работы</span>
-        <div className="table-body">
-          <span>Понедельник</span>
-          <span>Вторник</span>
-          <span>Среда</span>
-          <span>Четверг</span>
-          <span>Пятница</span>
-          <span>Обед</span>
-        </div>
-        <div className="table-body">
-          <span>8:30-17:22</span>
-          <span>8:30-17:22</span>
-          <span>8:30-17:22</span>
-          <span>8:30-17:22</span>
-          <span>8:30-16:22</span>
-          <span>13:00-13:40</span>
-        </div>
-      </div>
-      <div className="table">
         <span className="table-title">Заказ справок об обучении</span>
         <div className="table-body">
           <span>Понедельник</span>
@@ -57,7 +57,6 @@ const Contact = () => {
           <span>Среда</span>
           <span>Четверг</span>
           <span>Пятница</span>
-          <span>Обед</span>
         </div>
         <div className="table-body">
           <span>-</span>
@@ -65,7 +64,6 @@ const Contact = () => {
           <span>-</span>
           <span>14:00-16:00</span>
           <span>-</span>
-          <span>13:00-13:40</span>
         </div>
       </div>
     </div>
