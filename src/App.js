@@ -60,8 +60,9 @@ function App() {
             <Route path="methodical_materials" element={<MethodicalMaterials setStylePath={setStylePath} />} />
             <Route path="demo_exam" element={<DemoExam setStylePath={setStylePath} />} />
           </Route>
-          <Route path="/employees" element={<Employees setStylePath={setStylePath} />} />
-          <Route path="/employees/teacher" element={<Teacher setStylePath={setStylePath} />} />
+          <Route path="/employees" element={<Employees setStylePath={setStylePath} />}>
+            <Route path="teacher" element={<Teacher setStylePath={setStylePath} />} />
+          </Route>
           <Route path="/shedule" element={<Shedule setStylePath={setStylePath} />} />
           <Route path="/info_about_organization" element={<InfoAboutOrganization setStylePath={setStylePath} />}>
             <Route path="basic_info" element={<BasicInfo setStylePath={setStylePath} />} />

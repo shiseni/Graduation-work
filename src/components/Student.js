@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Outlet } from "react-router-dom";
+import SectionNavigationBar from "./General/SectionNavigationBar";
 
 const Student = (props) => {
   const { setStylePath } = props;
@@ -10,6 +11,7 @@ const Student = (props) => {
 
   return (
     <div className="main-container">
+      <SectionNavigationBar />
       <Outlet />
     </div>
   );

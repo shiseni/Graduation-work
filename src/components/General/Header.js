@@ -2,36 +2,15 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Links, MainNavButton } from "../constants";
 
-const SubSection = (props) => {
-  const { subsection } = props;
-  return (
-    <li key={subsection.id}>
-      <Link to={subsection.link} title={subsection.name}>
-        {subsection.name}
-      </Link>
-    </li>
-  );
-};
-
 const Section = (props) => {
   const { currentKey } = props;
   return Links.map((section) => {
     return (
-      console.log(currentKey, section.key),
-      (
-        <MainNavButton key={section.id} type={section.key === currentKey ? "active_section" : null}>
-          <Link to={section.link} title={section.name}>
-            {section.name}
-          </Link>
-          {section.sub !== undefined && (
-            <ul>
-              {section.sub.map((subsection) => {
-                return <SubSection subsection={subsection} />;
-              })}
-            </ul>
-          )}
-        </MainNavButton>
-      )
+      <MainNavButton key={section.id} type={section.key === currentKey ? "active_section" : null}>
+        <Link to={section.link} title={section.name}>
+          {section.name}
+        </Link>
+      </MainNavButton>
     );
   });
 };
