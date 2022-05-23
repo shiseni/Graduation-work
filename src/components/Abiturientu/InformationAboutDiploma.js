@@ -17,22 +17,22 @@ const InformationAboutDiploma = (props) => {
         <div align="center">
           <img src="/images/abiturientu/diploma.jpg" alt="diploma"></img>
         </div>
-      </div>
-      <div>
-        <h3>Приложения:</h3>
-        <div class="files">
-          <p>
-            <img src="/images/icon_generic.gif" alt="Файл" title="Файл" />
-            <a href="https://disk.yandex.ru/i/TUCIgFIc-v7iqg" id="file_1">
-              ● Вкладыши к диплому СПО
-            </a>
-          </p>
-          <p>
-            <img src="/images/icon_generic.gif" alt="Файл" title="Файл" />
-            <a href="https://disk.yandex.ru/i/7feoWH2gR5gVMA" id="file_2">
-              ● Свидетельство о профессии рабочего, должности служащего
-            </a>
-          </p>
+        <div>
+          <h2>Приложения:</h2>
+          <div className="files">
+            <p>
+              <a href="https://disk.yandex.ru/i/TUCIgFIc-v7iqg">
+                <img src="/images/icon_generic.gif" alt="Файл" title="Файл" />
+                <span>Вкладыши к диплому СПО</span>
+              </a>
+            </p>
+            <p>
+              <a href="https://disk.yandex.ru/i/7feoWH2gR5gVMA">
+                <img src="/images/icon_generic.gif" alt="Файл" title="Файл" />
+                <span>Свидетельство о профессии рабочего, должности служащего</span>
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </div>

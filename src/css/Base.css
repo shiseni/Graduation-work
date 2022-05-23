@@ -4,12 +4,51 @@ body {
   font-size: 12px;
 }
 
+.logo {
+  text-align: center;
+}
+
+img {
+  object-fit: contain;
+}
+
+.show-logo-header img {
+  animation: showing-logo-header 400ms linear forwards;
+}
+
+.hide-logo-header img {
+  animation: hiding-logo-header 400ms linear forwards;
+}
+
+@keyframes showing-logo-header {
+  from {
+    height: 0;
+    margin: 0;
+  }
+  to {
+    height: 41px;
+    margin: 10px 0;
+  }
+}
+
+@keyframes hiding-logo-header {
+  from {
+    height: 41px;
+    margin: 10px 0;
+  }
+  to {
+    height: 0;
+    margin: 0;
+  }
+}
+
 .center-line {
   text-align: center;
 }
 
 .attention {
   color: #000000;
+  font-size: 16px;
   animation: Attention 3s ease-in-out infinite;
 }
 
@@ -87,7 +126,19 @@ body {
 .table-body span {
   width: inherit;
   border: 1px solid #555;
-  height: 30px;
+  padding: 10px;
+}
+
+.table-body span:nth-of-type(even) {
+  background: #838282;
+}
+
+.table-body span:nth-of-type(odd) {
+  background: #a5a5a5;
+}
+
+.files img {
+  margin-right: 5px;
 }
 
 /*Header and footer*/
@@ -125,11 +176,6 @@ ul.navigation li:hover {
   position: relative;
   transition: background-color 400ms ease-in-out;
   background-color: #1d85b9;
-}
-
-.logo {
-  text-align: center;
-  margin: 10px 0;
 }
 
 footer.footer {
@@ -177,6 +223,17 @@ footer.footer {
 .section-body p {
   font-size: 16px;
   margin: 8px 0;
+}
+
+.section-body a {
+  color: #006090;
+  font-weight: bold;
+  animation: link 1s linear infinite;
+  border-bottom: 1px solid #006090;
+}
+
+.section-body a:hover {
+  animation: none;
 }
 
 .employees-box {
@@ -252,5 +309,11 @@ footer.footer {
 @keyframes Attention {
   50% {
     color: #c90202;
+  }
+}
+
+@keyframes link {
+  50% {
+    border-bottom: 1px solid #a5a5a5;
   }
 }

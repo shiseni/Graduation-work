@@ -17,6 +17,7 @@ const Section = (props) => {
 
 const Header = () => {
   const [currentKey, setCurrentKey] = useState(null);
+  const [smallHeader, setSmallHeader] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -31,9 +32,16 @@ const Header = () => {
       setCurrentKey(null);
     };
   });
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () => setSmallHeader(window.pageYOffset > 90));
+    }
+  }, []);
+
   return (
     <header className="header">
-      <div className="logo">
+      <div className={`logo${smallHeader ? " hide-logo-header" : " show-logo-header"}`}>
         <Link to="/">
           <img src="/logo.png" width="100" height="41" alt="Главная" />
         </Link>

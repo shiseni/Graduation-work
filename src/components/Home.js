@@ -23,9 +23,9 @@ const Home = (props) => {
           <a className="target-link" href="index.php?id=894">
             <span>Информация по оплате</span>
           </a>
-          <a className="target-link" href="index.php?id=1177">
+          <Link to={"/student/demo_exam"} className="target-link">
             <span>Демонстрационный экзамен</span>
-          </a>
+          </Link>
         </div>
       </div>
       {/*<News />*/}
