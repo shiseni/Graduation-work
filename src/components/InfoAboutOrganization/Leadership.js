@@ -9,13 +9,19 @@ const Person = (props) => {
       <p>
         <img src={`/images/employees/${person.image}`} border="5" width="180" height="220" alt="" />
       </p>
-      <span>
-        <font size="+1">{person.job}</font>
-      </span>
-      <p>{person.placeFirst}</p>
-      <p>{person.placeSecond}</p>
-      <p>{person.phone}</p>
-      <p>{person.email}</p>
+      {person.job ? <h3>{person.job}</h3> : null}
+      {person.placeFirst ? <p>{person.placeFirst}</p> : null}
+      {person.placeSecond ? <p>{person.placeSecond}</p> : null}
+      {person.phone ? (
+        <p>
+          <a href={`tel:${person.phone}`}>{person.phone}</a>
+        </p>
+      ) : null}
+      {person.email ? (
+        <p>
+          <a href={`mailto:${person.email}`}>{person.email}</a>
+        </p>
+      ) : null}
     </div>
   );
 };

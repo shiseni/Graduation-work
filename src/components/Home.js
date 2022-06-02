@@ -9,9 +9,9 @@ const Home = () => {
       </div>
       <div className="container">
         <div className="new-information">
-          <a className="target-link" href="index.php?id=787">
+          <Link to={"/admission_campaign_2022"} className="target-link">
             <span>Приёмная кампания 2022</span>
-          </a>
+          </Link>
           <Link to={"/abiturientu/tuition_price"} className="target-link">
             <span>Информация по оплате</span>
           </Link>

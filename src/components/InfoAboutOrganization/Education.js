@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Education = () => {
   return (
@@ -25,13 +26,19 @@ const Education = () => {
                 </span>
                 <span className="files">
                   <p>
-                    <a href="assets/files/accr/opop/opop08.02.01.pdf">- копия образовательной программы</a>
+                    <a href="/files/education/opop08.02.01.pdf" target="_blank" rel="noreferrer">
+                      - копия образовательной программы
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/build_2018.pdf">- копии учебных планов за 2018 г-г.</a>
+                    <a href="/files/education/build_2018.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2018 г-г.
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/annotation08.02.01.pdf">- аннотации рабочих программ учебных дисциплин</a>
+                    <a href="/files/education/annotation08.02.01.pdf" target="_blank" rel="noreferrer">
+                      - аннотации рабочих программ учебных дисциплин
+                    </a>
                   </p>
                 </span>
               </div>
@@ -45,31 +52,49 @@ const Education = () => {
                 </span>
                 <span className="files">
                   <p>
-                    <a href="assets/files/education/oop_08.02.01_2019_9.pdf">- копия образовательной программы (на базе основного общего образования)</a>
+                    <a href="/files/education/oop_08.02.01_2019_9.pdf" target="_blank" rel="noreferrer">
+                      - копия образовательной программы (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/oop_08.02.01_2019_11.pdf">- копия образовательной программы (на базе среднего общего образования)</a>
+                    <a href="/files/education/oop_08.02.01_2019_11.pdf" target="_blank" rel="noreferrer">
+                      - копия образовательной программы (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/up2019/up_08.02.01_9_new.pdf">- копии учебных планов за 2019г. (на базе основного общего образования)</a>
+                    <a href="/files/education/up2019/up_08.02.01_9_new.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2019г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/up2019/up_08.02.01_11_new.pdf">- копии учебных планов за 2019г. (на базе среднего общего образования)</a>
+                    <a href="/files/education/up2019/up_08.02.01_11_new.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2019г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/08.02.01_plan_9.pdf">- копии учебных планов за 2020 г. (на базе основного общего образования)</a>
+                    <a href="/files/education/08.02.01_plan_9.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2020 г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/08.02.01_plan_11.pdf">- копии учебных планов за 2020 г. (на базе среднего общего образования)</a>
+                    <a href="/files/education/08.02.01_plan_11.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2020 г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="https://disk.yandex.ru/i/r6JVN6ONGddPCg">- копии учебных планов за 2021г. (на базе основного общего образования)</a>
+                    <a href="https://disk.yandex.ru/i/r6JVN6ONGddPCg" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2021г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="https://disk.yandex.ru/i/H6TiTvKUePb_fQ">- копии учебных планов за 2021г. (на базе среднего общего образования)</a>
+                    <a href="https://disk.yandex.ru/i/H6TiTvKUePb_fQ" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2021г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/annotation08.02.01_10.01.2018.pdf">- аннотации рабочих программ учебных дисциплин</a>
+                    <a href="/files/education/annotation08.02.01_10.01.2018.pdf" target="_blank" rel="noreferrer">
+                      - аннотации рабочих программ учебных дисциплин
+                    </a>
                   </p>
                 </span>
               </div>
@@ -83,24 +108,39 @@ const Education = () => {
                 </span>
                 <span className="files">
                   <p>
-                    <a href="assets/files/education/oop/opop_09.02.03.pdf">- копия образовательной программы</a>
+                    <a href="/files/education/opop_09.02.03.pdf" target="_blank" rel="noreferrer">
+                      - копия образовательной программы
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/prog_2018.pdf">- копии учебных планов за 2018г-г.</a>
+                    <a href="/files/education/prog_2018.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2018г-г.
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/up2019/up_09.02.03_9_2019.pdf">- копии учебных планов за 2019г. (на базе основного общего образования)</a>
+                    <a href="/files/education/up_09.02.03_9_2019.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2019г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/up2019/up_09.02.03_11_2019.pdf">- копии учебных планов за 2019г. (на базе среднего общего образования)</a>
+                    <a href="/files/education/up_09.02.03_11_2019.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2019г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/09.02.03_plan_9_20.pdf">- копии учебных планов за 2020 г. (на базе основного общего образования)</a>
+                    <a href="/files/education/09.02.03_plan_9_20.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2020 г. (на базе основного общего образования)
+                    </a>
                   </p>
-                  <a href="assets/files/accr/uplanu/09.02.03_plan_11_20.pdf">- копии учебных планов за 2020 г. (на базе среднего общего образования)</a>
-                  <p></p>
                   <p>
-                    <a href="assets/files/accr/annotation09.02.03.pdf">- аннотации рабочих программ дисциплин</a>
+                    <a href="/files/education/09.02.03_plan_11_20.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2020 г. (на базе среднего общего образования)
+                    </a>
+                  </p>
+                  <p>
+                    <a href="/files/education/annotation09.02.03.pdf" target="_blank" rel="noreferrer">
+                      - аннотации рабочих программ дисциплин
+                    </a>
                   </p>
                 </span>
               </div>
@@ -114,19 +154,29 @@ const Education = () => {
                 </span>
                 <span className="files">
                   <p>
-                    <a href="assets/files/education/oop/opop_09.02.07.pdf">- копия образовательной программы</a>
+                    <a href="/files/education/opop_09.02.07.pdf" target="_blank" rel="noreferrer">
+                      - копия образовательной программы
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/09.02.07_plan_9_20.pdf">- копии учебных планов за 2020 г. (на базе основного общего образования)</a>
+                    <a href="/files/education/09.02.07_plan_9_20.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2020 г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="https://disk.yandex.ru/i/tVgTQ-R3vh8shA">- копии учебных планов за 2021 г. (на базе основного общего образования)</a>
+                    <a href="https://disk.yandex.ru/i/tVgTQ-R3vh8shA" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2021 г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="https://disk.yandex.ru/i/I-mIANyDJ9Z7bQ">- копии учебных планов за 2021 г. (на базе среднего общего образования)</a>
+                    <a href="https://disk.yandex.ru/i/I-mIANyDJ9Z7bQ" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2021 г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/annotation_09.02.07.pdf">- аннотации рабочих программ дисциплин</a>
+                    <a href="/files/education/annotation_09.02.07.pdf" target="_blank" rel="noreferrer">
+                      - аннотации рабочих программ дисциплин
+                    </a>
                   </p>
                 </span>
               </div>
@@ -140,28 +190,44 @@ const Education = () => {
                 </span>
                 <span className="files">
                   <p>
-                    <a href="assets/files/accr/opop/opop_11.02.02.pdf">- копия образовательной программы</a>
+                    <a href="/files/education/opop_11.02.02.pdf" target="_blank" rel="noreferrer">
+                      - копия образовательной программы
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/radio_2018.pdf">- копии учебных планов за 2018 г.</a>
+                    <a href="/files/education/radio_2018.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2018 г.
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/up2019/up_11.02.02_9_2019.pdf">- копии учебных планов за 2019г. (на базе основного общего образования)</a>
+                    <a href="/files/education/up_11.02.02_9_2019.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2019г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/11.02.02_plan_9_20.pdf">- копии учебных планов за 2020 г. (на базе основного общего образования)</a>
+                    <a href="/files/education/11.02.02_plan_9_20.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2020 г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/11.02.02_plan_11_20.pdf">- копии учебных планов за 2020 г. (на базе среднего общего образования)</a>
+                    <a href="/files/education/11.02.02_plan_11_20.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2020 г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="https://disk.yandex.ru/i/rIO9koS2pT2c_g">- копии учебных планов за 2021 г. (на базе основного общего образования)</a>
+                    <a href="https://disk.yandex.ru/i/rIO9koS2pT2c_g" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2021 г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="https://disk.yandex.ru/i/DyboCu-qz1p75Q">- копии учебных планов за 2021 г. (на базе среднего общего образования)</a>
+                    <a href="https://disk.yandex.ru/i/DyboCu-qz1p75Q" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2021 г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/annotation11.02.02.pdf">- аннотации рабочих программ дисциплин</a>
+                    <a href="/files/education/annotation11.02.02.pdf" target="_blank" rel="noreferrer">
+                      - аннотации рабочих программ дисциплин
+                    </a>
                   </p>
                 </span>
               </div>
@@ -175,13 +241,19 @@ const Education = () => {
                 </span>
                 <span className="files">
                   <p>
-                    <a href="assets/files/accr/opop/opop13.02.11.pdf">- копия образовательной программы</a>
+                    <a href="/files/education/opop13.02.11.pdf" target="_blank" rel="noreferrer">
+                      - копия образовательной программы
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/electromeh_2018.pdf">- копии учебных планов за 2018г-г.</a>
+                    <a href="/files/education/electromeh_2018.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2018г-г.
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/annotation13.02.11.pdf">- аннотации рабочих программ дисциплин</a>
+                    <a href="/files/education/annotation13.02.11.pdf" target="_blank" rel="noreferrer">
+                      - аннотации рабочих программ дисциплин
+                    </a>
                   </p>
                 </span>
               </div>
@@ -195,31 +267,49 @@ const Education = () => {
                 </span>
                 <span className="files">
                   <p>
-                    <a href="assets/files/education/oop_13.02.11_2019_9.pdf">- копия образовательной программы (на базе основного общего образования)</a>
+                    <a href="/files/education/oop_13.02.11_2019_9.pdf" target="_blank" rel="noreferrer">
+                      - копия образовательной программы (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/oop_13.02.11_2019_11.pdf">- копия образовательной программы (на базе среднего общего образования)</a>
+                    <a href="/files/education/oop_13.02.11_2019_11.pdf" target="_blank" rel="noreferrer">
+                      - копия образовательной программы (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/up2019/up_13.02.11_9_new.pdf">- копии учебных планов за 2019г. (на базе основного общего образования)</a>
+                    <a href="/files/education/up_13.02.11_9_new.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2019г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/up2019/up_13.02.11_11_new.pdf">- копии учебных планов за 2019г. (на базе среднего общего образования)</a>
+                    <a href="/files/education/up_13.02.11_11_new.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2019г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/13.02.11_plan_9_20.pdf">- копии учебных планов за 2020 г. (на базе основного общего образования)</a>
+                    <a href="/files/education/13.02.11_plan_9_20.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2020 г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/13.02.11_plan_11_20.pdf">- копии учебных планов за 2020 г. (на базе среднего общего образования)</a>
+                    <a href="/files/education/13.02.11_plan_11_20.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2020 г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="https://disk.yandex.ru/i/2jrfOr-KhCYP5g">- копии учебных планов за 2021 г. (на базе основного общего образования)</a>
+                    <a href="https://disk.yandex.ru/i/2jrfOr-KhCYP5g" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2021 г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="https://disk.yandex.ru/i/fZlv04vrYt0-xA">- копии учебных планов за 2021 г. (на базе среднего общего образования)</a>
+                    <a href="https://disk.yandex.ru/i/fZlv04vrYt0-xA" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2021 г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/annotation13.02.11_07.12.2017.pdf">- аннотации рабочих программ учебных дисциплин</a>
+                    <a href="/files/education/annotation13.02.11_07.12.2017.pdf" target="_blank" rel="noreferrer">
+                      - аннотации рабочих программ учебных дисциплин
+                    </a>
                   </p>
                 </span>
               </div>
@@ -233,31 +323,49 @@ const Education = () => {
                 </span>
                 <span className="files">
                   <p>
-                    <a href="assets/files/accr/opop/opop21.02.03.pdf">- копия образовательной программы</a>
+                    <a href="/files/education/opop21.02.03.pdf" target="_blank" rel="noreferrer">
+                      - копия образовательной программы
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/neftgaz.pdf">- копии учебных планов за 2018 г-г.</a>
+                    <a href="/files/education/neftgaz.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2018 г-г.
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/up2019/up_21.02.03_9_2019.pdf">- копии учебных планов за 2019г. (на базе основного общего образования)</a>
+                    <a href="/files/education/up_21.02.03_9_2019.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2019г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/up2019/up_21.02.03_11.pdf">- копии учебных планов за 2019г. (на базе среднего общего образования)</a>
+                    <a href="/files/education/up_21.02.03_11.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2019г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/21.02.03_plan_9_20.pdf">- копии учебных планов за 2020 г. (на базе основного общего образования)</a>
+                    <a href="/files/education/21.02.03_plan_9_20.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2020 г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/21.02.03_plan_11_20.pdf">- копии учебных планов за 2020 г. (на базе среднего общего образования)</a>
+                    <a href="/files/education/21.02.03_plan_11_20.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2020 г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="https://disk.yandex.ru/i/fHFf57hfkmDxkg">- копии учебных планов за 2021 г. (на базе основного общего образования)</a>
+                    <a href="https://disk.yandex.ru/i/fHFf57hfkmDxkg" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2021 г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="https://disk.yandex.ru/i/YheYyUvAmgfCgw">- копии учебных планов за 2021 г. (на базе среднего общего образования)</a>
+                    <a href="https://disk.yandex.ru/i/YheYyUvAmgfCgw" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2021 г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/annotation21.02.03.pdf">-аннотации рабочих программ дисциплин</a>
+                    <a href="/files/education/annotation21.02.03.pdf" target="_blank" rel="noreferrer">
+                      -аннотации рабочих программ дисциплин
+                    </a>
                   </p>
                 </span>
               </div>
@@ -271,13 +379,17 @@ const Education = () => {
                 </span>
                 <span className="files">
                   <p>
-                    <a href="assets/files/accr/opop/opop38.02.01_9_11.pdf">- копия образовательной программы</a>
+                    <a href="/files/education/opop38.02.01_9_11.pdf" target="_blank" rel="noreferrer">
+                      - копия образовательной программы
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/buh.pdf">- копии учебных планов за 2018г-г.</a>
+                    <a href="/files/education/buh.pdf"> target="_blank" rel="noreferrer"- копии учебных планов за 2018г-г.</a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/annot38.02.01.pdf">- аннотации рабочих программ учебных дисциплин</a>
+                    <a href="/files/education/annot38.02.01.pdf" target="_blank" rel="noreferrer">
+                      - аннотации рабочих программ учебных дисциплин
+                    </a>
                   </p>
                 </span>
               </div>
@@ -291,31 +403,49 @@ const Education = () => {
                 </span>
                 <span className="files">
                   <p>
-                    <a href="assets/files/education/oop_38.02.01_2019_9.pdf">- копия образовательной программы (на базе основного общего образования)</a>
+                    <a href="/files/education/oop_38.02.01_2019_9.pdf" target="_blank" rel="noreferrer">
+                      - копия образовательной программы (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/oop_38.02.01_2019_11.pdf">- копия образовательной программы (на базе среднего общего образования)</a>
+                    <a href="/files/education/oop_38.02.01_2019_11.pdf" target="_blank" rel="noreferrer">
+                      - копия образовательной программы (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/up2019/up_38.02.01_9_new.pdf">- копии учебных планов за 2019г. (на базе основного общего образования)</a>
+                    <a href="/files/education/up_38.02.01_9_new.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2019г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/up2019/up_38.02.01_11_new.pdf">- копии учебных планов за 2019г. (на базе среднего общего образования)</a>
+                    <a href="/files/education/up_38.02.01_11_new.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2019г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/38.02.01_plan_9_20.pdf">- копии учебных планов за 2020 г. (на базе основного общего образования)</a>
+                    <a href="/files/education/38.02.01_plan_9_20.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2020 г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/38.02.01_plan_11_20.pdf">- копии учебных планов за 2020 г. (на базе среднего общего образования)</a>
+                    <a href="/files/education/38.02.01_plan_11_20.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2020 г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="https://disk.yandex.ru/i/VwQwal-2l7gryw">- копии учебных планов за 2021 г. (на базе основного общего образования)</a>
+                    <a href="https://disk.yandex.ru/i/VwQwal-2l7gryw" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2021 г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="https://disk.yandex.ru/i/laHXc9EFZMr35A">- копии учебных планов за 2021 г. (на базе среднего общего образования)</a>
+                    <a href="https://disk.yandex.ru/i/laHXc9EFZMr35A" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2021 г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/annotation_38.02.01.pdf">- аннотации рабочих программ учебных дисциплин</a>
+                    <a href="/files/education/annotation_38.02.01.pdf" target="_blank" rel="noreferrer">
+                      - аннотации рабочих программ учебных дисциплин
+                    </a>
                   </p>
                 </span>
               </div>
@@ -329,31 +459,49 @@ const Education = () => {
                 </span>
                 <span className="files">
                   <p>
-                    <a href="assets/files/accr/opop/opop_38.02.04.pdf">- копия образовательной программы</a>
+                    <a href="/files/education/opop_38.02.04.pdf" target="_blank" rel="noreferrer">
+                      - копия образовательной программы
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/commerce.pdf">- копии учебных планов за 2018 г-г.</a>{" "}
+                    <a href="/files/education/commerce.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2018 г-г.
+                    </a>{" "}
                   </p>
                   <p>
-                    <a href="assets/files/education/up2019/up_38.02.04_9.pdf">- копии учебных планов за 2019г. (на базе основного общего образования)</a>
+                    <a href="/files/education/up_38.02.04_9.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2019г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/up2019/up_38.02.04_11_2019.pdf">- копии учебных планов за 2019г. (на базе среднего общего образования)</a>
+                    <a href="/files/education/up_38.02.04_11_2019.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2019г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/38.02.04_plan_9_20.pdf">- копии учебных планов за 2020 г. (на базе основного общего образования)</a>
+                    <a href="/files/education/38.02.04_plan_9_20.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2020 г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/38.02.04_plan_11_20.pdf">- копии учебных планов за 2020 г. (на базе среднего общего образования)</a>
+                    <a href="/files/education/38.02.04_plan_11_20.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2020 г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="https://disk.yandex.ru/i/VNKHmBahgWWQrw">- копии учебных планов за 2021 г. (на базе основного общего образования)</a>
+                    <a href="https://disk.yandex.ru/i/VNKHmBahgWWQrw" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2021 г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="https://disk.yandex.ru/i/oqCEnMvqXU0ubA">- копии учебных планов за 2021 г. (на базе среднего общего образования)</a>
+                    <a href="https://disk.yandex.ru/i/oqCEnMvqXU0ubA" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2021 г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/annot38.02.04.pdf">- аннотации рабочих программ учебных дисциплин</a>
+                    <a href="/files/education/annot38.02.04.pdf" target="_blank" rel="noreferrer">
+                      - аннотации рабочих программ учебных дисциплин
+                    </a>
                   </p>
                 </span>
               </div>
@@ -367,13 +515,19 @@ const Education = () => {
                 </span>
                 <span className="files">
                   <p>
-                    <a href="assets/files/accr/opop/opop_38.02.07.pdf">- копия образовательной программы</a>
+                    <a href="/files/education/opop_38.02.07.pdf" target="_blank" rel="noreferrer">
+                      - копия образовательной программы
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/bank.pdf">- копии учебных планов за 2018г-г.</a>
+                    <a href="/files/education/bank.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2018г-г.
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/annot38.02.07.pdf">- аннотации рабочих программ учебных дисциплин</a>
+                    <a href="/files/education/annot38.02.07.pdf" target="_blank" rel="noreferrer">
+                      - аннотации рабочих программ учебных дисциплин
+                    </a>
                   </p>
                 </span>
               </div>
@@ -387,31 +541,49 @@ const Education = () => {
                 </span>
                 <span className="files">
                   <p>
-                    <a href="assets/files/education/oop_38.02.07_9_2019.pdf">- копия образовательной программы (на базе основного общего образования)</a>
+                    <a href="/files/education/oop_38.02.07_9_2019.pdf" target="_blank" rel="noreferrer">
+                      - копия образовательной программы (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/oop_38.02.07_11_2019.pdf">- копия образовательной программы (на базе среднего общего образования)</a>
+                    <a href="/files/education/oop_38.02.07_11_2019.pdf" target="_blank" rel="noreferrer">
+                      - копия образовательной программы (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/up2019/up_38.02.07_9_new.pdf">- копии учебных планов за 2019г. (на базе основного общего образования)</a>
+                    <a href="/files/education/up_38.02.07_9_new.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2019г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/up2019/up_38.02.07_11_new.pdf">- копии учебных планов за 2019г. (на базе среднего общего образования)</a>
+                    <a href="/files/education/up_38.02.07_11_new.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2019г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/38.02.07_plan_9_20.pdf">- копии учебных планов за 2020 г. (на базе основного общего образования)</a>
+                    <a href="/files/education/38.02.07_plan_9_20.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2020 г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/accr/uplanu/38.02.07_plan_11_20.pdf">- копии учебных планов за 2020 г. (на базе среднего общего образования)</a>
+                    <a href="/files/education/38.02.07_plan_11_20.pdf" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2020 г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="https://disk.yandex.ru/i/M9flqXKDk1GJ4w">- копии учебных планов за 2021 г. (на базе основного общего образования)</a>
+                    <a href="https://disk.yandex.ru/i/M9flqXKDk1GJ4w" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2021 г. (на базе основного общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="https://disk.yandex.ru/i/utliTekrrUBdwQ">- копии учебных планов за 2021 г. (на базе среднего общего образования)</a>
+                    <a href="https://disk.yandex.ru/i/utliTekrrUBdwQ" target="_blank" rel="noreferrer">
+                      - копии учебных планов за 2021 г. (на базе среднего общего образования)
+                    </a>
                   </p>
                   <p>
-                    <a href="assets/files/education/annot38.02.07_2020.pdf">- аннотации рабочих программ учебных дисциплин</a>
+                    <a href="/files/education/annot38.02.07_2020.pdf" target="_blank" rel="noreferrer">
+                      - аннотации рабочих программ учебных дисциплин
+                    </a>
                   </p>
                 </span>
               </div>
@@ -419,41 +591,41 @@ const Education = () => {
           </div>
           <div height="1">
             <p>
-              <a href="index.php?id=490">Программа государственной итоговой аттестации выпускников</a>
+              <Link to={"/program_gia"}>Программа государственной итоговой аттестации выпускников</Link>
             </p>
             <p>
-              <a href="index.php?id=67">Методические материалы</a>
+              <Link to={"/student/methodical_materials"}>Методические материалы</Link>
             </p>
             <div class="files">
               <p>
-                <img src="/images/icon_generic.gif" alt="Файл" title="Файл" />
-                <a href="https://disk.yandex.ru/i/odaLi7Rzyicwiw" id="file_1">
-                  ● Информация о численности обучающихся по реализуемым образовательным программам за счет бюджетных ассигнований федерального бюджета, бюджетов субъектов Российской Федерации, местных
+                <a href="https://disk.yandex.ru/i/odaLi7Rzyicwiw" target="_blank" rel="noreferrer">
+                  <img src="/images/icon_generic.gif" alt="Файл" title="Файл" />
+                  Информация о численности обучающихся по реализуемым образовательным программам за счет бюджетных ассигнований федерального бюджета, бюджетов субъектов Российской Федерации, местных
                   бюджетов и по договорам об образовании за счет средств физических и (или) юридических лиц 01.10.2021{" "}
                 </a>
               </p>
               <p>
-                <img src="/images/icon_pdf.gif" alt="Adobe PDF" title="Adobe PDF" />
-                <a href="assets/files/pdf/sved/prog_vospit_2019_2023.pdf" id="file_2">
-                  ● Программа профессионального воспитания студентов "Колледжа экономики и информатики" на 2019-2023 годы
+                <a href="assets/files/pdf/sved/prog_vospit_2019_2023.pdf" target="_blank" rel="noreferrer">
+                  <img src="/images/icon_pdf.gif" alt="Adobe PDF" title="Adobe PDF" />
+                  Программа профессионального воспитания студентов "Колледжа экономики и информатики" на 2019-2023 годы
                 </a>
               </p>
               <p>
-                <img src="/images/icon_generic.gif" alt="Файл" title="Файл" />
-                <a href="https://disk.yandex.ru/i/kE7MX7wVgs645g" id="file_3">
-                  ● Календарно-тематический план воспитательной работы на 2021-2022 гг
+                <a href="https://disk.yandex.ru/i/kE7MX7wVgs645g" target="_blank" rel="noreferrer">
+                  <img src="/images/icon_generic.gif" alt="Файл" title="Файл" />
+                  Календарно-тематический план воспитательной работы на 2021-2022 гг
                 </a>
               </p>
               <p>
-                <img src="/images/icon_generic.gif" alt="Файл" title="Файл" />
-                <a href="https://disk.yandex.ru/i/H4BhquaEdZFaCg" id="file_4">
-                  ● Календарный учебный график Колледжа экономики и информатики имени А.Н. Афанасьева на 2021/2022 учебный год (очная форма обучения)
+                <a href="https://disk.yandex.ru/i/H4BhquaEdZFaCg" target="_blank" rel="noreferrer">
+                  <img src="/images/icon_generic.gif" alt="Файл" title="Файл" />
+                  Календарный учебный график Колледжа экономики и информатики имени А.Н. Афанасьева на 2021/2022 учебный год (очная форма обучения)
                 </a>
               </p>
               <p>
-                <img src="/images/icon_generic.gif" alt="Файл" title="Файл" />
-                <a href="https://disk.yandex.ru/i/wGJoVD4pDnNcJA" id="file_5">
-                  ● Список кураторов и старост учебных групп на 2021-2022 гг
+                <a href="https://disk.yandex.ru/i/wGJoVD4pDnNcJA" target="_blank" rel="noreferrer">
+                  <img src="/images/icon_generic.gif" alt="Файл" title="Файл" />
+                  Список кураторов и старост учебных групп на 2021-2022 гг
                 </a>
               </p>
             </div>

@@ -367,7 +367,7 @@ export const Teachers = [
   {
     id: 26,
     name: "Сафонов Александр Валериевич",
-    image: "Filippova.jpg",
+    image: "safonovav.jpg",
     job: "Преподаватель",
     placeFirst: "учебный корпус № 1 УлГТУ",
     placeSecond: "ул. Энгельса, 3, каб. 119",
@@ -409,6 +409,7 @@ export const MainNavButton = styled.li`
   position: relative;
   height: 100%;
   background: ${(props) => (props.type === null ? "#006090" : `${COLORS[props.type + "_cloudy"]}`)};
+  box-shadow: inset 0 -4px 0 var(--accent-color-hover);
   color: ${(props) => (props.type ? "#d9d9d9" : "#1c1c1c")};
 
   > a {

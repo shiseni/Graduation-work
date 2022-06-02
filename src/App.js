@@ -42,6 +42,10 @@ import Leadership from "./components/InfoAboutOrganization/Leadership";
 import Teacher from "./components/InfoAboutOrganization/Teacher";
 import LogisticsEquipment from "./components/InfoAboutOrganization/LogisticsEquipment";
 
+import AdmissionCampaign2022 from "./components/Other/AdmissionCampaign2022";
+import ReceptionInformation from "./components/Other/ReceptionInformation";
+import ProgramGIA from "./components/Other/ProgramGIA";
+
 function App() {
   const location = useLocation();
 
@@ -54,6 +58,10 @@ function App() {
             <Routes location={location}>
               <Route path="*" element={<NoMatch />} />
               <Route path="/" element={<Home />} />
+              <Route path="/admission_campaign_2022" element={<AdmissionCampaign2022 />}>
+                <Route path="reception_informatioon" element={<ReceptionInformation />} />
+              </Route>
+              <Route path="/program_gia" element={<ProgramGIA />} />
               <Route path="/abiturientu" element={<Abiturientu />}>
                 <Route path="speciality" element={<Speciality />} />
                 <Route path="information_about_diploma" element={<InformationAboutDiploma />} />

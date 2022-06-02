@@ -8,7 +8,7 @@ const GraduationProjectSchedule = () => {
         <div>
           <div className="files">
             <p>
-              <a href="https://disk.yandex.ru/i/IVFBm84Gmk5bRg">
+              <a href="https://disk.yandex.ru/i/IVFBm84Gmk5bRg" target="_blank" rel="noreferrer">
                 <img src="/images/icon_generic.gif" alt="Файл" title="Файл" />
                 <span>График проведения защиты дипломных проектов (работ)</span>
               </a>

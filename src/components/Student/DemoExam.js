@@ -40,18 +40,18 @@ const DemoExam = () => {
         </ul>
         <p></p>
         <p className="center-line">
-          <a href="https://disk.yandex.ru/d/84Oy4qV1Vktfdg" className="target-link">
+          <a href="https://disk.yandex.ru/d/84Oy4qV1Vktfdg" className="target-link" target="_blank" rel="noreferrer">
             Расписание
           </a>
         </p>
         <div>
           <p>
-            <a href="https://disk.yandex.ru/d/Ijlgq5JCcLZXlA">
+            <a href="https://disk.yandex.ru/d/Ijlgq5JCcLZXlA" target="_blank" rel="noreferrer">
               <b>Компетенция Бухгалтерский учет</b>
             </a>
           </p>
           <p>
-            <a href="https://disk.yandex.ru/d/JlzsOeVHMbKwhg">
+            <a href="https://disk.yandex.ru/d/JlzsOeVHMbKwhg" target="_blank" rel="noreferrer">
               <b>Компетенция Банковское дело</b>
             </a>
           </p>

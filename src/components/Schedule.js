@@ -7,19 +7,19 @@ const Shedule = () => {
       <div className="section-body">
         <div className="files">
           <p>
-            <a href="https://lk.ulstu.ru/?q=auth/login&amp;r=q%3Dhome">
+            <a href="https://lk.ulstu.ru/?q=auth/login&amp;r=q%3Dhome" target="_blank" rel="noreferrer">
               <img src="/images/icon_generic.gif" alt="Файл" title="Файл" />
               <span>Расписание занятий студентов</span>
             </a>
           </p>
           <p>
-            <a href="https://yadi.sk/d/flWvOqsC3Woqfe?w=1">
+            <a href="https://yadi.sk/d/flWvOqsC3Woqfe?w=1" target="_blank" rel="noreferrer">
               <img src="/images/icon_generic.gif" alt="Файл" title="Файл" />
               <span>Изменения на день</span>
             </a>
           </p>
           <p>
-            <a href="https://disk.yandex.ru/i/h5ypDcpjeKAXhQ">
+            <a href="https://disk.yandex.ru/i/h5ypDcpjeKAXhQ" target="_blank" rel="noreferrer">
               <img src="/images/icon_generic.gif" alt="Файл" title="Файл" />
               <span>Узнать, какая сейчас неделя</span>
             </a>
@@ -36,7 +36,7 @@ const Shedule = () => {
           <p>5-102 – пятый учебный корпус (бывшая военная кафедра) аудитория 102</p>
           <p>ДОТ в расписании означает дистанционное занятие в Zoom</p>
           <p>
-            <a href="https://disk.yandex.ru/d/EA51eFMwESiFLQ">
+            <a href="https://disk.yandex.ru/d/EA51eFMwESiFLQ" target="_blank" rel="noreferrer">
               <img src="/images/icon_generic.gif" alt="Файл" title="Файл" />
               <span>Инструкция как пользоваться расписанием</span>
             </a>

@@ -8,10 +8,10 @@ const LeadershipTeachers = () => {
       <div className="section-body">
         <div className="new-information">
           <Link to="/info_about_organization/leadership_teachers/leadership" title="Административный состав факультета СПО" className="target-link">
-            <span>Административный состав</span>
+            <span style={{ fontSize: "17px" }}>Административный состав</span>
           </Link>
           <Link to="/info_about_organization/leadership_teachers/teacher" title="Руководство и педагогический состав КЭИ" className="target-link">
-            <span>Руководство и педагогический состав</span>
+            <span style={{ fontSize: "17px" }}>Руководство и педагогический состав</span>
           </Link>
         </div>
         <Outlet />

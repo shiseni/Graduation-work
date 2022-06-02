@@ -15,13 +15,13 @@ const InformationAboutDiploma = () => {
           <h2>Приложения:</h2>
           <div className="files">
             <p>
-              <a href="https://disk.yandex.ru/i/TUCIgFIc-v7iqg">
+              <a href="https://disk.yandex.ru/i/TUCIgFIc-v7iqg" target="_blank" rel="noreferrer">
                 <img src="/images/icon_generic.gif" alt="Файл" title="Файл" />
                 <span>Вкладыши к диплому СПО</span>
               </a>
             </p>
             <p>
-              <a href="https://disk.yandex.ru/i/7feoWH2gR5gVMA">
+              <a href="https://disk.yandex.ru/i/7feoWH2gR5gVMA" target="_blank" rel="noreferrer">
                 <img src="/images/icon_generic.gif" alt="Файл" title="Файл" />
                 <span>Свидетельство о профессии рабочего, должности служащего</span>
               </a>
