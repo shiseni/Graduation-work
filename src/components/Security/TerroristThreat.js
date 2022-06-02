@@ -1,12 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-const TerroristThreat = (props) => {
-  const { setStylePath } = props;
-
-  useEffect(() => {
-    setStylePath("/css/Home.css");
-  }, [setStylePath]);
-
+const TerroristThreat = () => {
   return (
     <div className="container">
       <div className="section-title">Порядок действия в случае возникновения террористической угрозы</div>

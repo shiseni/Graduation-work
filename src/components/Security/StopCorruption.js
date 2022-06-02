@@ -1,12 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-const StopCorruption = (props) => {
-  const { setStylePath } = props;
-
-  useEffect(() => {
-    setStylePath("/css/Home.css");
-  }, [setStylePath]);
-
+const StopCorruption = () => {
   return (
     <div className="container">
       <div className="section-title">STOP Коррупция</div>

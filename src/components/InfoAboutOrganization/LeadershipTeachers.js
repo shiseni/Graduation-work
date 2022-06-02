@@ -1,13 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link, Outlet } from "react-router-dom";
 
-const LeadershipTeachers = (props) => {
-  const { setStylePath } = props;
-
-  useEffect(() => {
-    setStylePath("/css/Home.css");
-  }, [setStylePath]);
-
+const LeadershipTeachers = () => {
   return (
     <div className="container">
       <div className="section-title">Руководство. Педагогический (научно-педагогический) состав</div>
@@ -16,7 +10,7 @@ const LeadershipTeachers = (props) => {
           <Link to="/info_about_organization/leadership_teachers/leadership" title="Административный состав факультета СПО" className="target-link">
             <span>Административный состав</span>
           </Link>
-          <Link to="/info_about_organization/leadership_teachers/teachers" title="Руководство и педагогический состав КЭИ" className="target-link">
+          <Link to="/info_about_organization/leadership_teachers/teacher" title="Руководство и педагогический состав КЭИ" className="target-link">
             <span>Руководство и педагогический состав</span>
           </Link>
         </div>

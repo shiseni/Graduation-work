@@ -1,12 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-const ReleaseInformation = (props) => {
-  const { setStylePath } = props;
-
-  useEffect(() => {
-    setStylePath(null);
-  }, [setStylePath]);
-
+const ReleaseInformation = () => {
   return (
     <div className="container">
       <div className="section-title">Заказ и выдача справок</div>

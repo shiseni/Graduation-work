@@ -1,20 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Outlet } from "react-router-dom";
 import SectionNavigationBar from "./General/SectionNavigationBar";
 
-const Abiturientu = (props) => {
-  const { setStylePath } = props;
-
-  useEffect(() => {
-    setStylePath("/css/Home.css");
-  }, [setStylePath]);
-
+const Abiturientu = () => {
   return (
-    <div className="main-container">
-      <div className="container">
-        <SectionNavigationBar />
-        <Outlet />
-      </div>
+    <div className="container">
+      <SectionNavigationBar />
+      <Outlet />
     </div>
   );
 };

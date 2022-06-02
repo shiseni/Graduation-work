@@ -1,17 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-const LogisticsEquipment = (props) => {
-  const { setStylePath } = props;
-
-  useEffect(() => {
-    setStylePath("/css/Home.css");
-  }, [setStylePath]);
-
+const LogisticsEquipment = () => {
   return (
     <div className="main-container">
       <div className="container">
         <h2>Материально-техническое обеспечение и оснащенность образовательного процесса</h2>
-        <h1>Сайт лагает кошмарно</h1>
+        <h1>lazy loading...</h1>
       </div>
     </div>
   );

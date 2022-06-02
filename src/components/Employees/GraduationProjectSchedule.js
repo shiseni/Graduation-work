@@ -1,12 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-const GraduationProjectSchedule = (props) => {
-  const { setStylePath } = props;
-
-  useEffect(() => {
-    setStylePath("/css/Home.css");
-  }, [setStylePath]);
-
+const GraduationProjectSchedule = () => {
   return (
     <div className="container">
       <div className="section-title">График проведения защиты дипломных проектов</div>

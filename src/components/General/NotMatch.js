@@ -1,18 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-const NoMatch = (props) => {
-  const { setStylePath } = props;
-
-  useEffect(() => {
-    setStylePath(null);
-  }, [setStylePath]);
-
+const NoMatch = () => {
   return (
-    <div className="main-container">
-      <div className="container">
-        <div>
-          <h1 align="center">Такой страницы не существует</h1>
-        </div>
+    <div className="container">
+      <div>
+        <h1 align="center">Такой страницы не существует</h1>
       </div>
     </div>
   );

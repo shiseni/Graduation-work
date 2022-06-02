@@ -1,12 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-const Portfolio = (props) => {
-  const { setStylePath } = props;
-
-  useEffect(() => {
-    setStylePath("/css/Home.css");
-  }, [setStylePath]);
-
+const Portfolio = () => {
   return (
     <div className="container">
       <div className="section-title">Портфолио</div>

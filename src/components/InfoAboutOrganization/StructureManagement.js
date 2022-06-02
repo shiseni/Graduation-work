@@ -1,12 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-const StructureManagement = (props) => {
-  const { setStylePath } = props;
-
-  useEffect(() => {
-    setStylePath(null);
-  }, [setStylePath]);
-
+const StructureManagement = () => {
   return (
     <div className="container">
       <div className="section-title">Структура и органы управления образовательной организацией</div>

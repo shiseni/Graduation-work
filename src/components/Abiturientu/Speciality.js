@@ -1,12 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-const Speciality = (props) => {
-  const { setStylePath } = props;
-
-  useEffect(() => {
-    setStylePath("/css/Home.css");
-  }, [setStylePath]);
-
+const Speciality = () => {
   return (
     <div className="container">
       <div className="section-title">Наши специальности</div>

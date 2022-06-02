@@ -1,16 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Outlet } from "react-router-dom";
 import SectionNavigationBar from "./General/SectionNavigationBar";
 
-const Employees = (props) => {
-  const { setStylePath } = props;
-
-  useEffect(() => {
-    setStylePath("/css/Home.css");
-  }, [setStylePath]);
-
+const Employees = () => {
   return (
-    <div className="main-container">
+    <div className="container">
       <SectionNavigationBar />
       <Outlet />
     </div>

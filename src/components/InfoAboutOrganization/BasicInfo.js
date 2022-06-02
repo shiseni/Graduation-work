@@ -1,12 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-const BasicInfo = (props) => {
-  const { setStylePath } = props;
-
-  useEffect(() => {
-    setStylePath(null);
-  }, [setStylePath]);
-
+const BasicInfo = () => {
   return (
     <div className="container">
       <div className="section-title">Основные сведения</div>
@@ -53,7 +47,9 @@ const BasicInfo = (props) => {
         </div>
         <div>
           <h3>Информация об адресах электронной почты образовательной организации:</h3>
-          <p>kei@ido.ulstu.ru</p>
+          <p>
+            <a href="mailto:kei@ido.ulstu.ru">kei@ido.ulstu.ru</a>
+          </p>
         </div>
       </div>
     </div>

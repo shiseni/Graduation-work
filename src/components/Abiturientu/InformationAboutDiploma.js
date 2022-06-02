@@ -1,12 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-const InformationAboutDiploma = (props) => {
-  const { setStylePath } = props;
-
-  useEffect(() => {
-    setStylePath("/css/Home.css");
-  }, [setStylePath]);
-
+const InformationAboutDiploma = () => {
   return (
     <div className="container">
       <div className="section-title">ИНФОРМАЦИЯ О ВЫДАВАЕМОМ ДИПЛОМЕ</div>

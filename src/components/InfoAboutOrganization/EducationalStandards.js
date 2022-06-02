@@ -1,12 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-const EducationalStandards = (props) => {
-  const { setStylePath } = props;
-
-  useEffect(() => {
-    setStylePath("/css/Home.css");
-  }, [setStylePath]);
-
+const EducationalStandards = () => {
   return (
     <div className="container">
       <div className="section-title">Образовательные стандарты</div>

@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 import "./css/Base.css";
 import "./css/Normalize.css";
 import Header from "./components/General/Header";
@@ -21,7 +22,7 @@ import MethodicalMaterials from "./components/Student/MethodicalMaterials";
 import DemoExam from "./components/Student/DemoExam";
 
 import Employees from "./components/Employees";
-import Teacher from "./components/Employees/Teacher";
+import ForTeacher from "./components/Employees/Teacher";
 import GraduationProjectSchedule from "./components/Employees/GraduationProjectSchedule";
 
 import Security from "./components/Security";
@@ -38,54 +39,58 @@ import Education from "./components/InfoAboutOrganization/Education";
 import EducationalStandards from "./components/InfoAboutOrganization/EducationalStandards";
 import LeadershipTeachers from "./components/InfoAboutOrganization/LeadershipTeachers";
 import Leadership from "./components/InfoAboutOrganization/Leadership";
-import Teachers from "./components/InfoAboutOrganization/Teachers";
+import Teacher from "./components/InfoAboutOrganization/Teacher";
 import LogisticsEquipment from "./components/InfoAboutOrganization/LogisticsEquipment";
 
 function App() {
-  const [stylePath, setStylePath] = useState(null);
+  const location = useLocation();
+
   return (
     <>
-      <link rel="stylesheet" type="text/css" href={stylePath} />
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="*" element={<NoMatch setStylePath={setStylePath} />} />
-          <Route path="/" element={<Home setStylePath={setStylePath} />} />
-          <Route path="/abiturientu" element={<Abiturientu setStylePath={setStylePath} />}>
-            <Route path="speciality" element={<Speciality setStylePath={setStylePath} />} />
-            <Route path="information_about_diploma" element={<InformationAboutDiploma setStylePath={setStylePath} />} />
-            <Route path="tuition_price" element={<TuitionPrice setStylePath={setStylePath} />} />
-          </Route>
-          <Route path="/student" element={<Student setStylePath={setStylePath} />}>
-            <Route path="title_pages_for_final_qualifying_work" element={<TitlePagesForFinalQualifyingWork setStylePath={setStylePath} />} />
-            <Route path="portfolio" element={<Portfolio setStylePath={setStylePath} />} />
-            <Route path="release_information" element={<ReleaseInformation setStylePath={setStylePath} />} />
-            <Route path="methodical_materials" element={<MethodicalMaterials setStylePath={setStylePath} />} />
-            <Route path="demo_exam" element={<DemoExam setStylePath={setStylePath} />} />
-          </Route>
-          <Route path="/employees" element={<Employees setStylePath={setStylePath} />}>
-            <Route path="teacher" element={<Teacher setStylePath={setStylePath} />} />
-            <Route path="graduation_project_schedule" element={<GraduationProjectSchedule setStylePath={setStylePath} />} />
-          </Route>
-          <Route path="/security" element={<Security setStylePath={setStylePath} />}>
-            <Route path="terrorist_threat" element={<TerroristThreat setStylePath={setStylePath} />} />
-            <Route path="stop_corruption" element={<StopCorruption setStylePath={setStylePath} />} />
-          </Route>
-          <Route path="/shedule" element={<Shedule setStylePath={setStylePath} />} />
-          <Route path="/info_about_organization" element={<InfoAboutOrganization setStylePath={setStylePath} />}>
-            <Route path="basic_info" element={<BasicInfo setStylePath={setStylePath} />} />
-            <Route path="structure_management" element={<StructureManagement setStylePath={setStylePath} />} />
-            <Route path="documents" element={<Documents setStylePath={setStylePath} />} />
-            <Route path="education" element={<Education setStylePath={setStylePath} />} />
-            <Route path="educational_standarts" element={<EducationalStandards setStylePath={setStylePath} />} />
-            <Route path="leadership_teachers" element={<LeadershipTeachers setStylePath={setStylePath} />}>
-              <Route path="leadership" element={<Leadership setStylePath={setStylePath} />} />
-              <Route path="teachers" element={<Teachers setStylePath={setStylePath} />} />
-            </Route>
-            <Route path="logistics_equipment" element={<LogisticsEquipment setStylePath={setStylePath} />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <Header />
+      <div className="main-container">
+        <TransitionGroup component={null}>
+          <CSSTransition key={location.key} classNames="fade" timeout={500} unmountOnExit>
+            <Routes location={location}>
+              <Route path="*" element={<NoMatch />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/abiturientu" element={<Abiturientu />}>
+                <Route path="speciality" element={<Speciality />} />
+                <Route path="information_about_diploma" element={<InformationAboutDiploma />} />
+                <Route path="tuition_price" element={<TuitionPrice />} />
+              </Route>
+              <Route path="/student" element={<Student />}>
+                <Route path="title_pages_for_final_qualifying_work" element={<TitlePagesForFinalQualifyingWork />} />
+                <Route path="portfolio" element={<Portfolio />} />
+                <Route path="release_information" element={<ReleaseInformation />} />
+                <Route path="methodical_materials" element={<MethodicalMaterials />} />
+                <Route path="demo_exam" element={<DemoExam />} />
+              </Route>
+              <Route path="/employees" element={<Employees />}>
+                <Route path="teacher" element={<ForTeacher />} />
+                <Route path="graduation_project_schedule" element={<GraduationProjectSchedule />} />
+              </Route>
+              <Route path="/security" element={<Security />}>
+                <Route path="terrorist_threat" element={<TerroristThreat />} />
+                <Route path="stop_corruption" element={<StopCorruption />} />
+              </Route>
+              <Route path="/shedule" element={<Shedule />} />
+              <Route path="/info_about_organization" element={<InfoAboutOrganization />}>
+                <Route path="basic_info" element={<BasicInfo />} />
+                <Route path="structure_management" element={<StructureManagement />} />
+                <Route path="documents" element={<Documents />} />
+                <Route path="education" element={<Education />} />
+                <Route path="educational_standarts" element={<EducationalStandards />} />
+                <Route path="leadership_teachers" element={<LeadershipTeachers />}>
+                  <Route path="leadership" element={<Leadership />} />
+                  <Route path="teacher" element={<Teacher />} />
+                </Route>
+                <Route path="logistics_equipment" element={<LogisticsEquipment />} />
+              </Route>
+            </Routes>
+          </CSSTransition>
+        </TransitionGroup>
+      </div>
       <Footer />
     </>
   );

@@ -1,12 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-const Teacher = (props) => {
-  const { setStylePath } = props;
-
-  useEffect(() => {
-    setStylePath("/css/Home.css");
-  }, [setStylePath]);
-
+const ForTeacher = () => {
   return (
     <div className="container">
       <div className="section-title">Преподавателю</div>
@@ -45,4 +39,4 @@ const Teacher = (props) => {
   );
 };
 
-export default Teacher;
+export default ForTeacher;

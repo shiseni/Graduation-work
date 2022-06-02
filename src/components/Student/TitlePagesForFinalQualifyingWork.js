@@ -1,12 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-const TitlePagesForFinalQualifyingWork = (props) => {
-  const { setStylePath } = props;
-
-  useEffect(() => {
-    setStylePath(null);
-  }, [setStylePath]);
-
+const TitlePagesForFinalQualifyingWork = () => {
   return (
     <div className="container">
       <div className="section-title">Титульные листы для ВКР</div>

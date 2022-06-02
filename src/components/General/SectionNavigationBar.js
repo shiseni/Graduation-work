@@ -3,43 +3,37 @@ import { Link, useLocation } from "react-router-dom";
 import { Links, SectionNavButton } from "../constants";
 
 const SectionNavigationBar = () => {
-  const [currentKey, setCurrentKey] = useState(null);
-  const [currentType, setCurrentType] = useState(null);
   const location = useLocation();
+  const [hasSub, setHasSub] = useState(false);
+  const [subLinks, setSubLinks] = useState(null);
 
   useEffect(() => {
     Links.forEach((element) => {
-      if (element.link === location.pathname) {
-        setCurrentKey(element.key);
-      }
-      element.sub?.forEach((subElement) => {
-        if (subElement.link === location.pathname) {
-          setCurrentKey(subElement.key);
-          setCurrentType(subElement.type);
+      if (element.key === location.pathname.split("/")[1]) {
+        setSubLinks(element.sub);
+        if (element.sub) {
+          setHasSub(true);
         }
-      });
+      }
     });
     return () => {
-      setCurrentType(null);
-      setCurrentKey(null);
+      setSubLinks(null);
+      setHasSub(false);
     };
-  });
+  }, [subLinks, location.pathname]);
 
-  return (
-    <div className="navigation-bar">
-      {Links.map((section) => {
-        if (section.key === currentKey) {
-          return section.sub?.map((subSection) => {
-            return (
-              <SectionNavButton key={subSection.type} type={subSection.type === currentType ? "active_type" : null}>
-                <Link to={subSection.link}>{subSection.name}</Link>
-              </SectionNavButton>
-            );
-          });
-        } else return null;
-      })}
-    </div>
-  );
+  if (hasSub)
+    return (
+      <div className="navigation-bar">
+        {subLinks?.map((section) => {
+          return (
+            <SectionNavButton key={section.type} type={section.type === location.pathname.split("/")[2] ? "active_type" : null}>
+              <Link to={section.link}>{section.name}</Link>
+            </SectionNavButton>
+          );
+        })}
+      </div>
+    );
 };
 
 export default SectionNavigationBar;

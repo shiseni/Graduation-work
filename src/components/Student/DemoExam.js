@@ -1,12 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-const DemoExam = (props) => {
-  const { setStylePath } = props;
-
-  useEffect(() => {
-    setStylePath("/css/Home.css");
-  }, [setStylePath]);
-
+const DemoExam = () => {
   return (
     <div className="container">
       <div className="section-title">Демонстрационный экзамен</div>

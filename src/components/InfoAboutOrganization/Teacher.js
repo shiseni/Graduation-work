@@ -1,5 +1,5 @@
 import React from "react";
-import { Leaderships } from "../constants";
+import { Teachers } from "../constants";
 
 const Person = (props) => {
   const { person } = props;
@@ -20,13 +20,13 @@ const Person = (props) => {
   );
 };
 
-const Leadership = () => {
+const Teacher = () => {
   return (
     <div className="container">
-      <div className="section-title">Административный состав факультета СПО</div>
+      <div className="section-title">Руководство и педагогический состав КЭИ</div>
       <div className="section-body">
         <div className="employees-box">
-          {Leaderships.map((person) => (
+          {Teachers.map((person) => (
             <Person key={person.id} person={person} />
           ))}
         </div>
@@ -35,4 +35,4 @@ const Leadership = () => {
   );
 };
 
-export default Leadership;
+export default Teacher;
