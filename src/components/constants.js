@@ -428,8 +428,11 @@ export const SectionNavButton = styled.div`
   padding: 10px;
   text-align: center;
   background-color: ${(props) => (props.type === null ? "transparent" : `${COLORS[props.type + "_cloudy"]}`)};
+  display: ${(props) => (props.type === null ? "block" : "flex")};
+  align-items: center;
 
-  > a {
+  > a,
+  > span {
     display: block;
     height: 100%;
     width: 100%;

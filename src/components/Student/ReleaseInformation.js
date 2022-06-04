@@ -3,7 +3,6 @@ import React from "react";
 const ReleaseInformation = () => {
   return (
     <div className="container">
-      <div className="section-title">Заказ и выдача справок</div>
       <div className="section-body">
         <div className="center-line attention">Обращаем Ваше внимание, что справки выдаются по графику!</div>
         <p>

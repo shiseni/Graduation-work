@@ -3,7 +3,6 @@ import React from "react";
 const TuitionPrice = () => {
   return (
     <div className="container">
-      <div className="section-title">Стоимость обучения</div>
       <div className="section-body">
         <div className="files">
           <p>

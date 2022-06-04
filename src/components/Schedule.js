@@ -3,7 +3,6 @@ import React from "react";
 const Shedule = () => {
   return (
     <div className="container">
-      <div className="section-title">Расписание</div>
       <div className="section-body">
         <div className="files">
           <p>

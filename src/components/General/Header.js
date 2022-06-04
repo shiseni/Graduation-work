@@ -1,23 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Links, MainNavButton, SectionNavButton } from "../constants";
-
-const SubSections = (props) => {
-  const { subLinks } = props;
-  const location = useLocation();
-
-  return (
-    <div className="navigation-bar">
-      {subLinks?.map((section) => {
-        return (
-          <SectionNavButton key={section.type} type={section.type === location.pathname.split("/")[2] ? "active_type" : null}>
-            <Link to={section.link}>{section.name}</Link>
-          </SectionNavButton>
-        );
-      })}
-    </div>
-  );
-};
+import MediaQuery from "react-responsive";
+import { Links, MainNavButton } from "../constants";
 
 const Sections = (props) => {
   const { currentKey } = props;
@@ -36,42 +20,63 @@ const Header = () => {
   const location = useLocation();
   const currentKey = location.pathname.split("/")[1];
   const [smallHeader, setSmallHeader] = useState(false);
-  //const [hasSub, setHasSub] = useState(false);
-  //const [subLinks, setSubLinks] = useState(null);
+  const [showMenu, setShowMenu] = useState(false);
+  const menuImage = `${showMenu ? "close" : "menu"}`;
 
-  //useEffect(() => {
-  //  Links.forEach((element) => {
-  //    if (element.key === currentKey) {
-  //      setSubLinks(element.sub);
-  //      if (element.sub) {
-  //        setHasSub(true);
-  //      }
-  //    }
-  //  });
-  //  return () => {
-  //    setSubLinks(null);
-  //    setHasSub(false);
-  //  };
-  //}, [subLinks, currentKey]);
+  function showingMenu() {
+    setShowMenu((showMenu) => !showMenu);
+  }
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      window.addEventListener("scroll", () => setSmallHeader(window.pageYOffset > 90));
+      const onScrollHeader = () => {
+        let prevScroll = window.pageYOffset;
+        let currentScroll;
+
+        window.addEventListener("scroll", () => {
+          currentScroll = window.pageYOffset;
+          if (currentScroll < 50) {
+            setSmallHeader(false);
+          } else if (currentScroll > 50) {
+            if (currentScroll > prevScroll) {
+              setSmallHeader(true);
+              setShowMenu(false);
+            } else if (currentScroll < prevScroll) {
+              setSmallHeader(false);
+              setShowMenu(false);
+            }
+          }
+          prevScroll = currentScroll;
+        });
+      };
+      onScrollHeader();
     }
   }, []);
 
   return (
-    <header className="header">
-      <div className={`logo${smallHeader ? " hide-logo-header" : " show-logo-header"}`}>
+    <header className={`header${smallHeader ? " hide-header" : " show-header"}`}>
+      <div className={`logo`}>
         <Link to="/">
           <img src="/logo.png" width="100" height="41" alt="Главная" />
         </Link>
       </div>
-      <div className="block-menu">
-        <ul className="navigation">
-          <Sections currentKey={currentKey} />
-        </ul>
-        {/*hasSub ? <SubSections subLinks={subLinks} /> : null*/}
+      <div className="block-menu" onClick={showingMenu}>
+        <MediaQuery maxWidth={768}>
+          <img src={`/${menuImage}.svg`} alt={`${menuImage}`} className="show-close-button" />
+          {showMenu && (
+            <>
+              <div className="menu-background"></div>
+              <ul className="navigation">
+                <Sections currentKey={currentKey} />
+              </ul>
+            </>
+          )}
+        </MediaQuery>
+        <MediaQuery minWidth={769}>
+          <ul className="navigation">
+            <Sections currentKey={currentKey} />
+          </ul>
+        </MediaQuery>
       </div>
     </header>
   );

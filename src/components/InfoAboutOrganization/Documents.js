@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const Documents = () => {
   return (
     <div className="container">
-      <div className="section-title">Документы</div>
       <div className="section-body">
         <div className="files">
           <p>

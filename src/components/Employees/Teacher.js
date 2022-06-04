@@ -3,10 +3,8 @@ import React from "react";
 const ForTeacher = () => {
   return (
     <div className="container">
-      <div className="section-title">Преподавателю</div>
       <div className="section-body">
         <div>
-          <h2>Приложения:</h2>
           <div className="files">
             <p>
               <a href="https://disk.yandex.ru/i/vFyg7MQ9DS83dA" target="_blank" rel="noreferrer">

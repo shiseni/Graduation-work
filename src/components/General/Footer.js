@@ -18,12 +18,17 @@ const Footer = () => {
           <font>E-mail: kei@ido.ulstu.ru</font>
         </p>
         <p>
-          <font>Адрес: 32063, г. Ульяновск, ул.Энгельса, 3, (учебный корпус № 1), каб. 119</font>
+          <font className="desktop">Адрес: 32063, г. Ульяновск, ул.Энгельса, 3, (учебный корпус № 1), каб. 119</font>
+          <font className="mobile">32063, г. Ульяновск, ул.Энгельса, 3, (учебный корпус № 1)</font>
         </p>
       </div>
-      <div>
-        <center>&copy; 2014&ndash;2022 &bull; Колледж экономики и информатики им. А.Н. Афанасьева &bull; Все права защищены </center>
-      </div>
+      <center>
+        <font className="desktop">&copy; 2014&ndash;2022 &bull; Колледж экономики и информатики им. А.Н. Афанасьева &bull; Все права защищены </font>
+        <font className="mobile">
+          <p>Колледж экономики и информатики им. А.Н. Афанасьева</p>
+          <p>&copy; 2014&ndash;2022</p>
+        </font>
+      </center>
     </footer>
   );
 };

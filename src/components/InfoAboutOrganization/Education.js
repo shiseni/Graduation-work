@@ -4,11 +4,10 @@ import { Link } from "react-router-dom";
 const Education = () => {
   return (
     <div className="container">
-      <div className="section-title">Образование</div>
       <div className="section-body">
         <div>
           <div className="table">
-            <span className="table-title">Реализуемые уровни образования - среднее профессиональное образование</span>
+            <span className="table-title">Среднее профессиональное образование</span>
             <div className="info-education-table">
               <div className="table-body">
                 <span>Код и наименование специальности</span>

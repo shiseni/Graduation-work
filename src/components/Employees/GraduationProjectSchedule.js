@@ -3,7 +3,6 @@ import React from "react";
 const GraduationProjectSchedule = () => {
   return (
     <div className="container">
-      <div className="section-title">График проведения защиты дипломных проектов</div>
       <div className="section-body">
         <div>
           <div className="files">

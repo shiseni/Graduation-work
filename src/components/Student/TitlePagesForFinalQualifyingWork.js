@@ -3,7 +3,6 @@ import React from "react";
 const TitlePagesForFinalQualifyingWork = () => {
   return (
     <div className="container">
-      <div className="section-title">Титульные листы для ВКР</div>
       <div className="section-body">
         <div className="center-line attention">Внимание! Для правильной распечатки - скачивайте документы себе на компьютер!</div>
         <div className="center-line">

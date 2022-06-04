@@ -3,7 +3,6 @@ import React from "react";
 const StructureManagement = () => {
   return (
     <div className="container">
-      <div className="section-title">Структура и органы управления образовательной организацией</div>
       <div className="section-body">
         <p align="justify">
           <span>

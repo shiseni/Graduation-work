@@ -3,7 +3,6 @@ import React from "react";
 const EducationalStandards = () => {
   return (
     <div className="container">
-      <div className="section-title">Образовательные стандарты</div>
       <div className="section-body">
         <div className="files">
           <p>

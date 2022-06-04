@@ -3,7 +3,6 @@ import React from "react";
 const Portfolio = () => {
   return (
     <div className="container">
-      <div className="section-title">Портфолио</div>
       <div className="section-body">
         <div className="center-line attention">Внимание! Для редактирования документа скачайте его себе на компьютер!</div>
         <div className="center-line">

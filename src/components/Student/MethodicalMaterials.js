@@ -3,7 +3,6 @@ import React from "react";
 const MethodicalMaterials = () => {
   return (
     <div className="container">
-      <div className="section-title">Методические материалы</div>
       <div className="section-body">
         <div className="files">
           <p>
